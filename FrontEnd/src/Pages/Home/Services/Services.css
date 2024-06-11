@@ -1,0 +1,76 @@
+.Services{
+    min-height: 100vh;
+    height: fit-content;
+    background-color:#101956;
+    color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    gap: 2rem;
+}
+.servicesTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 85%;
+}
+.Services h3{
+    color: var(--blueRibon200);
+}
+.Services span{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.servicesList{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+}
+.serviceItem{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 2rem;
+}
+.serviceItem h4{
+    color:var(--blueRibon200)
+}
+.serviceInclude{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: var(--blueRibon200);
+    color:var(--blueRibon950);
+    border-radius: 25px;
+    padding: 2rem 2rem;
+}
+.serviceInclude h4{
+    font-size: 2rem;
+}
+.serviceInclude h4{
+    text-align: center;
+}
+.serviceInclude ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.serviceInclude li{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.serviceInclude li span{
+    text-decoration: underline;
+    font-weight: 800;
+    font-size: 1rem;
+}
+.serviceInclude ul img{
+    filter: invert(8%) sepia(68%) saturate(3222%) hue-rotate(229deg) brightness(92%) contrast(102%);
+}

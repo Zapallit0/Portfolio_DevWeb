@@ -1,3 +1,50 @@
 nav{
-    background-color: var(--);
+    background-color: var(--blueRibon900);
+    width: 100;
+    padding: 0.2rem 1rem;
+    color: var(--blueRibon200);
+    font-size: 1rem;
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.navHamb{
+    width: 1rem;
+}
+.navBar img{
+    width: 68px;
+    font-size: 1.5rem;
+    font-weight:700;
+}
+.navPhone{
+    width: 40%;
+    text-align: right;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 7vh;
+    background-color: var(--blueRibon900);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-right: 1.5rem;
+    gap: 1rem;
+    color: var(--blueRibon50);
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.navPhone button{
+    padding: 0.5rem 0rem;
+    border-radius: 15px;
+    background-color: transparent;
+    color: var(--blueRibon50);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: 3px var(--blueRibon300) solid;
+    text-decoration: none;
 }

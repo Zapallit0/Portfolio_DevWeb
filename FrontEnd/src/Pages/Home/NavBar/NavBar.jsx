@@ -1,34 +1,31 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import './NavBar.css'
+import {Squash as Hamburger} from 'hamburger-react'
+
 
 function NavBar() {
+const [showMenu, setShowMenu]=useState(false);
   return (
     <nav>
-        <div className='navBarPhone'>
+        <div className='navBar'>
             <picture>
                 <img src="" alt="JVQ" />
             </picture>
-            <ul>
+            <Hamburger size={25} color="#BBD8FF" duration={0.3} toggled={showMenu} toggle={setShowMenu} easing="ease-in"/>
+            <ul className='navPhone' style={{display:showMenu?'flex':'none'}}>
                 <li>Home</li>
                 <li>Servicios</li>
                 <li>Nosotros</li>
+                <button>Contáctanos</button>
             </ul>
-            <button>
-                Contáctanos
-            </button>
-        </div>
-        <div className='navBarFull' hidden="true">
-            <picture>
-                <img src="" alt="JVQ" />
-            </picture>
-            <ul>
+            {/* <ul className='navComp' hidden="true">
                 <li>Home</li>
                 <li>Servicios</li>
                 <li>Nosotros</li>
-            </ul>
-            <button>
+            </ul> */}
+            {/* <button>
                 Contáctanos
-            </button>
+            </button> */}
         </div>
     </nav>
   )
