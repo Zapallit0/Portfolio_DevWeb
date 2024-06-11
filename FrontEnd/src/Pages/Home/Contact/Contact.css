@@ -44,6 +44,9 @@
     font-weight:600;
     font-size:1.1rem;
 }
+.contactPage form button:hover{
+    background-color: var(--blueRibon800);
+}
 
 .contactLink{
     min-height: 50vh;
@@ -67,7 +70,7 @@
     margin-left: 10%;
     font-size: 1.5rem;
 }
-.contactLink p{
+.contactLink a{
     color: #FFFFFF;
 }
 .contactLink li{

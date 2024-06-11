@@ -1,0 +1,15 @@
+footer{
+    display: flex;
+    width:100%;
+    min-height:20vh ;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--blueRibon900) ;
+    color: #FFFFFF;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
