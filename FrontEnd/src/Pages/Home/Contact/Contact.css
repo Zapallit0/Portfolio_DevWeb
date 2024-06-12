@@ -94,3 +94,43 @@
     width:25px;
     filter: invert(78%) sepia(25%) saturate(767%) hue-rotate(193deg) brightness(94%) contrast(131%);
 }
+@media screen and (min-width: 720px){
+    .contactForm{
+        padding: 3rem 0;
+    }
+    .contactForm h3{
+        font-size: 2rem;
+    }
+    .contactForm form{
+        gap: 2.5rem;
+    }
+    .contactForm form input,textarea{
+        font-size: 1.4rem;
+    }
+    .contactForm form button{
+        font-size: 1.2rem;
+    }
+    .contactLink{
+        padding: 4rem 0;
+    }
+    .contactLink ul{
+        gap: 2.5rem;
+    }
+    .contactLink h4{
+        font-size: 2rem;
+    }
+    .contactLink li div{
+        width:50px;
+        height: 50px;
+    }
+    .contactLink li img{
+        width: 35px;
+        height: 35px;
+    }
+    .contactLink p{
+        font-size: 1.2rem;
+    }
+    .contactLink li h5,a{
+        font-size: 1.3rem;
+    }
+}

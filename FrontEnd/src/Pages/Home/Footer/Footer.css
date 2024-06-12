@@ -13,3 +13,8 @@ footer ul{
     flex-direction: row;
     gap: 1rem;
 }
+@media screen and (min-width:720px){
+    footer ul{
+        gap:4rem ;
+    }
+}

@@ -61,8 +61,6 @@
 }
 .serviceInclude h4{
     font-size: 2rem;
-}
-.serviceInclude h4{
     text-align: center;
 }
 .serviceInclude ul{
@@ -84,10 +82,43 @@
     filter: invert(8%) sepia(68%) saturate(3222%) hue-rotate(229deg) brightness(92%) contrast(102%);
 }
 @media screen and (min-width:720px){
+    .Services{
+        padding: 4rem 0;
+    }
     .servicesTitle h3{
         font-size: 1.8rem;
     }
     .servicesTitle span{
         font-size: 1.1rem;
+    }
+    .serviceItem img{
+        width: 450px;
+        height:330px;
+    }
+    .serviceItem h4{
+        font-size: 1.3rem;
+    }
+    .serviceItem p{
+        font-size: 1.1rem;
+    }
+    .serviceInclude{
+        width: 65%;
+        padding-bottom: 3rem;
+    }
+    .serviceInclude ul{
+        gap: 2.5rem;
+    }
+    .serviceInclude h4{
+        font-size: 2.2rem;
+    }
+    .serviceInclude li {
+        font-size: 1.4rem;
+    }
+    .serviceInclude li img{
+        height: 30px;
+        width: 30px;
+    }
+    .serviceInclude li span{
+        font-size: 1.4rem;
     }
 }
