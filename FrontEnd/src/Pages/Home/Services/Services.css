@@ -29,17 +29,26 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    align-items: center;
     gap: 2rem;
 }
 .serviceItem{
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     border-bottom: 1px solid #FFFFFF;
     padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
 }
+
 .serviceItem h4{
-    color:var(--blueRibon200)
+    color:var(--blueRibon200);
+    align-self: self-start;
+}
+.serviceItem p{
+    align-self: self-start;
 }
 .serviceInclude{
     display: flex;
@@ -73,4 +82,12 @@
 }
 .serviceInclude ul img{
     filter: invert(8%) sepia(68%) saturate(3222%) hue-rotate(229deg) brightness(92%) contrast(102%);
+}
+@media screen and (min-width:720px){
+    .servicesTitle h3{
+        font-size: 1.8rem;
+    }
+    .servicesTitle span{
+        font-size: 1.1rem;
+    }
 }

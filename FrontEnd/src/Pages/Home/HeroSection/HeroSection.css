@@ -104,3 +104,32 @@
     font-size: 0.75rem;
     color: var(--blueRibon200);
 }
+
+/* 720px screen */
+@media screen and (min-width: 720px){
+    .heroText h3{
+        font-size: 1.5rem;
+    }
+    .heroText h1{
+        font-size: 3rem;
+    }
+    .heroSocials img{
+        width:30px;
+        height:30px;
+    }
+    .heroCourusel1 img{
+        width: 400px;
+    }
+    .heroCourusel2 img{
+        width: 400px;
+    }
+    .heroExtraText{
+        font-size: 1.3rem;
+    }
+    .heroPoint h4{
+        font-size: 1.2rem;
+    }
+    .heroPoint span{
+        font-size: 1rem;
+    }
+}

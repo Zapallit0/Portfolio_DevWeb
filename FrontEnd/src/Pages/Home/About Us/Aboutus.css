@@ -30,3 +30,21 @@ h3, p{
     background-color:var(--blueRibon700) ;
     font-weight:700;
 }
+.AboutUs button:hover{
+    background-color: var(--blueRibon800);
+}
+.AboutUs button:active{
+    background-color: var(--blueRibon900);
+}
+/* 720px width */
+@media screen and (min-width:720px){
+    .AboutUs h3{
+        font-size: 1.7rem;
+    }
+    .AboutUs p{
+        font-size: 1.1rem;
+    }
+    .AboutUs button{
+        width: 20%;
+    }
+}

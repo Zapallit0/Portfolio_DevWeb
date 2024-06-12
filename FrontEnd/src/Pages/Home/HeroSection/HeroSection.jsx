@@ -21,17 +21,17 @@ function HeroSection() {
                 <li className="heroSocial"><img src={Github} alt="Github" height="30px" width="30px"/></li>
             </ul>
         </div>  
-        <div className='heroCourusel1'>
-            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" alt="" />
-            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" alt="" />
-            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" alt="" />
-            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" alt="" />
+        <div class='heroCourusel1'>
+                <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" alt="ImgCourusel1" />
+                <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc="  alt="ImgCourusel1" />
+                <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc="  alt="ImgCourusel1" />
+                <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc="  alt="ImgCourusel1" />
         </div>
         <div className='heroCourusel2'>
-            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" alt="" />
-            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" alt="" />
-            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" alt="" />
-            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" alt="" />
+            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" style={{position: "var(--position1)" }} alt="" />
+            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" style={{position: "var(--position2)" }} alt="" />
+            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" style={{position: "var(--position3)" }} alt="" />
+            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" style={{position: "var(--position4)" }} alt="" />
         </div>
         <div className='heroExtraText'>
             <span>Diseñamos y construimos tu sitio web a medida</span>
