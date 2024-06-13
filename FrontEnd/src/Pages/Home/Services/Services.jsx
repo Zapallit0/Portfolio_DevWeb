@@ -51,7 +51,7 @@ function Services() {
                 </li>
                 <li>
                     <img src={Check} alt="check" width='23px' height='23px'/>
-                    <p>Toda web tendrá <span>Dominio propio:</span>  tunegocio.com</p>
+                    <p>Toda web tendrá <span>dominio propio:</span>  tunegocio.com</p>
                 </li>
                 <li>
                     <img src={Check} alt="check" width='23px' height='23px'/>

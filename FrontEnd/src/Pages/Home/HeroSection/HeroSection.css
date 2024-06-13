@@ -133,3 +133,45 @@
         font-size: 1rem;
     }
 }
+@media screen and (min-width:1080px) {
+    .HeroSec{
+        gap: 4rem;
+        padding-top: 8%;
+    }
+    .heroText{
+        width: 80%;
+    }
+    .heroText h3{
+        font-size: 2rem;
+    }
+    .heroText h1{
+        width: 60%;
+        font-size:4rem ;
+    }
+    .heroSocials img{
+        width:40px;
+        height:40px;
+    }
+    .heroCourusel1 img{
+        width: 500px;
+    }
+    .heroCourusel2 img{
+        width: 500px;
+    }
+    .heroExtraText{
+        font-size: 1.6rem;
+    }
+    .heroPoints{
+        align-items: start;
+        flex-direction: row;
+        padding-left: 8rem;
+        gap: 1rem;
+    }
+    .heroPoint{
+        width: 25%;
+    }
+    .herologos{
+        height: 100%;
+        width: 45px;
+    }
+}

@@ -47,7 +47,6 @@
 .contactPage form button:hover{
     background-color: var(--blueRibon800);
 }
-
 .contactLink{
     min-height: 50vh;
     background-color:#0B1215;
@@ -132,5 +131,21 @@
     }
     .contactLink li h5,a{
         font-size: 1.3rem;
+    }
+}
+@media screen and (min-width:1080px){
+    .contactForm{
+        padding: 0;
+    }
+    .contactPage{
+        flex-direction: row;
+        padding-top: 0;
+    }
+    .contactForm{
+        width: 50%;
+    }
+    .contactLink{
+        width: 50%;
+        padding: 0;
     }
 }

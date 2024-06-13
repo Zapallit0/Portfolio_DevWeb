@@ -122,3 +122,66 @@
         font-size: 1.4rem;
     }
 }
+@media screen and (min-width:1080px){
+    .servicesList{
+        flex-direction: row;
+        align-items: start;
+        width: 90%;
+        gap: 1rem;
+    }
+    .serviceItem{
+        border: none;
+    }
+    .serviceItem img{
+        width:90%;
+        object-fit: cover;
+    }
+    .servicesTitle h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .serviceInclude{
+        width: 75%;
+    }
+    .serviceInclude ul{
+        gap: 1.5rem;
+    }
+}
+@media screen and (min-width:1200px){
+    .Services{
+        padding:8rem 0;
+        gap: 4rem;
+    }
+    .servicesList{
+        width: 80%;
+        gap: 1rem;
+    }
+    .servicesTitle span{
+        font-size: 1.3rem;
+    }
+    .serviceItem picture{
+        align-self: self-start;
+    }
+    .serviceItem img{
+        width:90%;
+        height:60vh;
+    }
+    .serviceItem h4{
+        font-size: 1.7rem;
+    }
+    .serviceItem p{
+        font-size: 1.2rem;
+    }
+    .serviceInclude{
+        width: 70%;
+    }
+    .serviceInclude ul{
+        gap: 2rem;
+    }
+    .serviceInclude li p{
+        font-size: 1.6rem;
+    }
+    .serviceInclude li span{
+        font-size: 1.6rem;
+    }
+}
