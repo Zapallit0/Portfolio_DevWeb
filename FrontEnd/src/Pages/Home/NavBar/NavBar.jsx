@@ -1,32 +1,35 @@
 import React ,{useState} from 'react'
 import './NavBar.css'
 import {Squash as Hamburger} from 'hamburger-react'
-
+import Circle from '../../../assets/Forms/Circle.svg'
 
 function NavBar() {
 const [showMenu, setShowMenu]=useState(false);
   return (
-    <nav>
-        <div className='navBar'>
+    <nav className='navBar'>
             <picture>
                 <img src="" alt="JVQ" />
             </picture>
-            <Hamburger size={25} color="#BBD8FF" duration={0.3} toggled={showMenu} toggle={setShowMenu} easing="ease-in"/>
-            <ul className='navPhone' style={{display:showMenu?'flex':'none'}}>
-                <li>Home</li>
-                <li>Servicios</li>
-                <li>Nosotros</li>
-                <button>Contáctanos</button>
-            </ul>
-            {/* <ul className='navComp' hidden="true">
-                <li>Home</li>
-                <li>Servicios</li>
-                <li>Nosotros</li>
-            </ul> */}
-            {/* <button>
-                Contáctanos
-            </button> */}
-        </div>
+            <div className='phone'>
+                <Hamburger size={25} color="#BBD8FF" duration={0.3} toggled={showMenu} toggle={setShowMenu} easing="ease-in"/>
+                <ul className='navPhone' style={{display:showMenu?'flex':'none'}}>
+                    <li>Home</li>
+                    <li>Servicios</li>
+                    <li>Nosotros</li>
+                    <button>Contáctanos</button>
+                </ul>
+            </div>
+            <div className='comp'>
+                <ul className='navComp'>
+                    <img src={Circle} alt="background" />
+                    <li>Home</li>
+                    <li className='mid'>Servicios</li>
+                    <li>Nosotros</li>
+                </ul>
+                <button>
+                    Contáctanos
+                </button>
+            </div>
     </nav>
   )
 }
