@@ -1,7 +1,7 @@
 footer{
     display: flex;
     width:100%;
-    min-height:20vh ;
+    min-height:10vh ;
     justify-content: center;
     align-items: center;
     background-color:var(--blueRibon900) ;
@@ -12,4 +12,9 @@ footer ul{
     display: flex;
     flex-direction: row;
     gap: 1rem;
+}
+@media screen and (min-width:720px){
+    footer ul{
+        gap:4rem ;
+    }
 }

@@ -61,8 +61,6 @@
 }
 .serviceInclude h4{
     font-size: 2rem;
-}
-.serviceInclude h4{
     text-align: center;
 }
 .serviceInclude ul{
@@ -84,11 +82,106 @@
     filter: invert(8%) sepia(68%) saturate(3222%) hue-rotate(229deg) brightness(92%) contrast(102%);
 }
 @media screen and (min-width:720px){
+    .Services{
+        padding: 4rem 0;
+    }
     .servicesTitle h3{
         font-size: 1.8rem;
     }
     .servicesTitle span{
         font-size: 1.1rem;
     }
-    
+    .serviceItem img{
+        width: 450px;
+        height:330px;
+    }
+    .serviceItem h4{
+        font-size: 1.3rem;
+    }
+    .serviceItem p{
+        font-size: 1.1rem;
+    }
+    .serviceInclude{
+        width: 65%;
+        padding-bottom: 3rem;
+    }
+    .serviceInclude ul{
+        gap: 2.5rem;
+    }
+    .serviceInclude h4{
+        font-size: 2.2rem;
+    }
+    .serviceInclude li {
+        font-size: 1.4rem;
+    }
+    .serviceInclude li img{
+        height: 30px;
+        width: 30px;
+    }
+    .serviceInclude li span{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (min-width:1080px){
+    .servicesList{
+        flex-direction: row;
+        align-items: start;
+        width: 90%;
+        gap: 1rem;
+    }
+    .serviceItem{
+        border: none;
+    }
+    .serviceItem img{
+        width:90%;
+        object-fit: cover;
+    }
+    .servicesTitle h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .serviceInclude{
+        width: 75%;
+    }
+    .serviceInclude ul{
+        gap: 1.5rem;
+    }
+}
+@media screen and (min-width:1200px){
+    .Services{
+        padding:8rem 0;
+        gap: 4rem;
+    }
+    .servicesList{
+        width: 80%;
+        gap: 1rem;
+    }
+    .servicesTitle span{
+        font-size: 1.3rem;
+    }
+    .serviceItem picture{
+        align-self: self-start;
+    }
+    .serviceItem img{
+        width:90%;
+        height:60vh;
+    }
+    .serviceItem h4{
+        font-size: 1.7rem;
+    }
+    .serviceItem p{
+        font-size: 1.2rem;
+    }
+    .serviceInclude{
+        width: 70%;
+    }
+    .serviceInclude ul{
+        gap: 2rem;
+    }
+    .serviceInclude li p{
+        font-size: 1.6rem;
+    }
+    .serviceInclude li span{
+        font-size: 1.6rem;
+    }
 }

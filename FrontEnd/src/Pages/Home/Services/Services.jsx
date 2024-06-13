@@ -43,23 +43,23 @@ function Services() {
                 <h4>INCLUYE</h4>
                 <li>
                     <img src={Check} alt="check" width='23px' height='23px'/>
-                    <p><span>Cotización especial</span> para cada proyecto, y negocio.</p>
+                    <p><span>Cotización especial</span> para cada proyecto, y negocio</p>
                 </li>
                 <li>
                     <img src={Check} alt="check" width='23px' height='23px'/>
-                    <p><span>Diseño personalizado</span> páginas de referencia y prototipos.</p>
+                    <p><span>Diseño personalizado</span> páginas de referencia y prototipos</p>
                 </li>
                 <li>
                     <img src={Check} alt="check" width='23px' height='23px'/>
-                    <p>Toda web tendrá <span>Dominio propio:</span>  tunegocio.com.</p>
+                    <p>Toda web tendrá <span>dominio propio:</span>  tunegocio.com</p>
                 </li>
                 <li>
                     <img src={Check} alt="check" width='23px' height='23px'/>
-                    <p><span>Correo profesional:</span> contacto@tunegocio.com.</p>
+                    <p><span>Correo profesional:</span> contacto@tunegocio.com</p>
                 </li>
                 <li>
                     <img src={Check} alt="check" width='23px' height='23px'/>
-                    <p>WEB AMPLIA contará con <span>más revisiones y cambios extra.</span></p>
+                    <p>WEB AMPLIA contará con <span>más revisiones y cambios extra</span></p>
                 </li>
             </ul>
         </div>
