@@ -132,6 +132,10 @@
     .serviceItem{
         border: none;
     }
+    .serviceItem picture{
+        align-items: self-start;
+        width: 100%;
+    }
     .serviceItem img{
         width:90%;
         object-fit: cover;
