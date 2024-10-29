@@ -10,6 +10,7 @@ import Lock from '../../../assets/Icons_Main/Lock.svg'
 import Perfil from '../../../assets/Icons_Main/Perfil.svg'
 import Slider1 from '../../../Components/Slider1/Slider1'
 import Slider2 from '../../../Components/Slider2/Slider2'
+import SliderComponent from '../../../Components/SliderComponent/SliderComponent'
 
 function HeroSection() {
   return (
@@ -22,9 +23,10 @@ function HeroSection() {
                 <li className="heroSocial"><img src={Linkedin} alt="Linkedin" height="30px" width="30px"/></li>
                 <li className="heroSocial"><img src={Github} alt="Github" height="30px" width="30px"/></li>
             </ul>
-            <Slider1 />
+            {/* <Slider1 /> */}
             <Slider2 />
-        </div>  
+        </div>
+        <SliderComponent/>
         <div className='heroExtraText'>
             <span>Diseñamos y construimos tu sitio web a medida</span>
             <p>Creamos webs ágiles, únicas, escalables y llamativas siguiendo las mejores prácticas.</p>
