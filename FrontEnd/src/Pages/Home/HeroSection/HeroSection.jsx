@@ -8,6 +8,8 @@ import Linkedin from '../../../assets/Socials/linkedin.svg'
 import Card from '../../../assets/Icons_Main/Card.svg'
 import Lock from '../../../assets/Icons_Main/Lock.svg'
 import Perfil from '../../../assets/Icons_Main/Perfil.svg'
+import Slider1 from '../../../Components/Slider1/Slider1'
+import Slider2 from '../../../Components/Slider2/Slider2'
 
 function HeroSection() {
   return (
@@ -20,19 +22,9 @@ function HeroSection() {
                 <li className="heroSocial"><img src={Linkedin} alt="Linkedin" height="30px" width="30px"/></li>
                 <li className="heroSocial"><img src={Github} alt="Github" height="30px" width="30px"/></li>
             </ul>
+            <Slider1 />
+            <Slider2 />
         </div>  
-        <div class='heroCourusel1'>
-                <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" alt="ImgCourusel1" />
-                <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc="  alt="ImgCourusel1" />
-                <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc="  alt="ImgCourusel1" />
-                <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc="  alt="ImgCourusel1" />
-        </div>
-        <div className='heroCourusel2'>
-            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" style={{position: "var(--position1)" }} alt="" />
-            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" style={{position: "var(--position2)" }} alt="" />
-            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" style={{position: "var(--position3)" }} alt="" />
-            <img src="https://media.istockphoto.com/id/1360684256/es/vector/carteles-geom%C3%A9tricos-retro-de-los-a%C3%B1os-70-impresi%C3%B3n-de-l%C3%ADneas-de-color-arco-iris-vintage.webp?s=2048x2048&w=is&k=20&c=vCJtpU30dnc7bxA-r-q08HUn0Q7S3d6q6NYiV2YyVlc=" style={{position: "var(--position4)" }} alt="" />
-        </div>
         <div className='heroExtraText'>
             <span>Diseñamos y construimos tu sitio web a medida</span>
             <p>Creamos webs ágiles, únicas, escalables y llamativas siguiendo las mejores prácticas.</p>

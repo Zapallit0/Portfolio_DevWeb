@@ -15,10 +15,11 @@
 .navHamb{
     width: 1rem;
 }
-.navBar img{
+.navBar picture img{
     width: 68px;
     font-size: 1.5rem;
     font-weight:700;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 .navPhone{
     width: 40%;
@@ -111,6 +112,6 @@
 @media screen and (min-width: 1000px){
     .navComp li{
         padding: 0 2rem;
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
 }
