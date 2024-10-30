@@ -139,7 +139,7 @@
 }
 @media screen and (min-width:1080px) {
     .HeroSec{
-        gap: 4rem;
+        gap: 2rem;
         padding-top: 8%;
     }
     .heroText{
