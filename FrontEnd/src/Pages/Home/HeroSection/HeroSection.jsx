@@ -8,6 +8,7 @@ import Linkedin from '../../../assets/Socials/linkedin.svg'
 import Card from '../../../assets/Icons_Main/Card.svg'
 import Lock from '../../../assets/Icons_Main/Lock.svg'
 import Perfil from '../../../assets/Icons_Main/Perfil.svg'
+// Slider Component
 import SliderComponent from '../../../Components/SliderComponent/SliderComponent'
 // Images
 import Img1 from '../../../assets/SliderImgs/BurekBurgers.png'

@@ -15,8 +15,8 @@ function App() {
         <Aboutus />
         <Services />
         <Contact/>
-        <Footer />
       </main>
+      <Footer />
     </>
   )
 }
