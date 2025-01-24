@@ -8,6 +8,23 @@ import WebService from '../../../assets/ServicesImgs/WebService.jpg'
 import Check from '../../../assets/Icons_Main/Check.svg'
 
 function Services() {
+
+    const ServiciosInfo=[
+        {
+            "Image":WebSimple,
+            "Title":"Desarrollo WEB",
+            "Description":"Creamos páginas web personalizadas, desde diseños estáticos con información clara y atractiva, hasta portales interactivos que ofrecen servicios, conectan con tus usuarios y fomentan una experiencia única. Adaptamos cada detalle para cumplir tus objetivos y destacar en el mundo digital."
+        },
+        {
+            "Image":WebAmplia,
+            "Title":"Sistema Web para Negocios",
+            "Description":"Creamos soluciones personalizadas que se adaptan a las necesidades específicas de tu empresa, como tiendas en línea para impulsar tus ventas, sistemas de reservas eficientes y paneles administrativos intuitivos para gestionar tu negocio de manera efectiva."
+        },{
+            "Image":WebService,
+            "Title":"Sistemas ERP",
+            "Description":"Creamos soluciones personalizadas que gestionan y automatizan los procesos internos de tu negocio, incluyendo inventario, recursos humanos, finanzas y logística, para que puedas operar de forma más eficiente y organizada."
+        }
+    ]
   return (
     <section className='Services'>
         <div className='servicesTitle'>
@@ -15,28 +32,16 @@ function Services() {
             <span>Ya sea que quieras iniciar, reconstruir o para continuar proyectos.</span>
         </div>
         <div className='servicesList'>
-            <div className='serviceItem'>
-                <picture>
-                    <img src={WebSimple} alt="Service" width='300px' height='220px' />
-                </picture>
-                <h4>WEB DE UNA CARA</h4>
-                <p>Toda la información de tu negocio
-                desplegada por partes que puedan seleccionar, incluyendo video imagenes que se manden para el desarrollo.</p>
-            </div>
-            <div className='serviceItem'>
-                <picture>
-                    <img src={WebAmplia} alt="Service" width='300px' height='220px' />
-                </picture>
-                <h4>WEB AMPLIA</h4>
-                <p>Web dividida por cada parte que se quiera mostrar, una pagina principal mas paginas como sobre nosotros, servicios o las necesarias para su negocio.</p>
-            </div>
-            <div className='serviceItem'>
-                <picture>
-                    <img src={WebService} alt="Service" width='300px' height='220px' />
-                </picture>
-                <h4>WEB AMPLIA Y SERVICIO</h4>
-                <p>Página web amplia más creación de sistema especial para tu negocio, agendado de citas, sitio de cursos, entre otros. Contará un una base de datos en relación a lo que se pida. </p>
-            </div>
+            { ServiciosInfo.map((servicio,index)=>(
+             <div className='serviceItem' key={index}>
+
+                 <img src={servicio.Image} alt="Service" width='300px' height='220px' />
+
+             <h4>{servicio.Title}</h4>
+             <p>{servicio.Description}</p>
+         </div>   
+            ))
+            }
         </div>
         <div className='serviceInclude'>
             <ul>
@@ -59,7 +64,7 @@ function Services() {
                 </li>
                 <li>
                     <img src={Check} alt="check" width='23px' height='23px'/>
-                    <p>WEB AMPLIA contará con <span>más revisiones y cambios extra</span></p>
+                    <p>Sistema Web para Negocios y ERP contará con <span>más revisiones y cambios extra</span></p>
                 </li>
             </ul>
         </div>

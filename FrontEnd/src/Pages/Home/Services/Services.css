@@ -132,10 +132,6 @@
     .serviceItem{
         border: none;
     }
-    .serviceItem picture{
-        align-items: self-start;
-        width: 100%;
-    }
     .serviceItem img{
         width:90%;
         object-fit: cover;
@@ -163,11 +159,9 @@
     .servicesTitle span{
         font-size: 1.3rem;
     }
-    .serviceItem picture{
-        align-self: self-start;
-    }
     .serviceItem img{
-        width:90%;
+        align-self: self-start;
+        width:80%;
         height:60vh;
     }
     .serviceItem h4{
