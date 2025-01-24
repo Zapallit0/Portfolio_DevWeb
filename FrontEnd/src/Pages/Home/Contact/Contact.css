@@ -1,0 +1,151 @@
+.contactPage{
+    background-color:#101720;
+    color: var(--blueRibon200);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    gap: 2rem;
+}
+.contactForm h3{
+    font-size: 1.5rem;
+}
+.contactForm form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+}
+.contactForm form input,textarea{
+    font-size: 1rem;
+    background-color:transparent;
+    border: none;
+    color:#FFFFFF;
+    border-bottom: 1px #FFFFFF solid;
+}
+.contactPage form button{
+    width: 30%;
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: var(--blueRibon600);
+    border: none;
+    color: var(--blueRibon200);
+    font-weight:600;
+    font-size:1.1rem;
+}
+.contactPage form button:hover{
+    background-color: var(--blueRibon800);
+}
+.contactLink{
+    min-height: 50vh;
+    background-color:#0B1215;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+.contactLink ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.contactLink h4{
+    align-self: flex-start;
+    margin-left: 10%;
+    font-size: 1.5rem;
+}
+.contactLink a{
+    color: #FFFFFF;
+}
+.contactLink li{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.contactLink li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--blueRibon900) ;
+    border-radius: 20px;
+    width: 45px;
+    height: 35px;
+}
+.contactLink li img{
+    height:25px;
+    width:25px;
+    filter: invert(78%) sepia(25%) saturate(767%) hue-rotate(193deg) brightness(94%) contrast(131%);
+}
+@media screen and (min-width: 720px){
+    .contactForm{
+        padding: 3rem 0;
+    }
+    .contactForm h3{
+        font-size: 2rem;
+    }
+    .contactForm form{
+        gap: 2.5rem;
+    }
+    .contactForm form input,textarea{
+        font-size: 1.4rem;
+    }
+    .contactForm form button{
+        font-size: 1.2rem;
+    }
+    .contactLink{
+        padding: 4rem 0;
+    }
+    .contactLink ul{
+        gap: 2.5rem;
+    }
+    .contactLink h4{
+        font-size: 2rem;
+    }
+    .contactLink li div{
+        width:50px;
+        height: 50px;
+    }
+    .contactLink li img{
+        width: 35px;
+        height: 35px;
+    }
+    .contactLink p{
+        font-size: 1.2rem;
+    }
+    .contactLink li h5,a{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-width:1080px){
+    .contactForm{
+        padding: 0;
+    }
+    .contactPage{
+        flex-direction: row;
+        padding-top: 0;
+    }
+    .contactForm{
+        width: 50%;
+    }
+    .contactLink{
+        width: 50%;
+        padding: 0;
+    }
+}

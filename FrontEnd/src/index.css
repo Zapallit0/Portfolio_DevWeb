@@ -1,0 +1,19 @@
+:root{
+    --blueRibon50:#eaf4ff;
+    --blueRibon100:#d9eaff;
+    --blueRibon200:#bbd8ff;
+    --blueRibon300:#92bdff;
+    --blueRibon400:#6795ff;
+    --blueRibon500:#446eff;
+    --blueRibon600:#2443ff;
+    --blueRibon700:#1831ea;
+    --blueRibon800:#172dbc;
+    --blueRibon900:#1c2f93;
+    --blueRibon950:#111a55;
+}
+
+*{
+    font-family: "Inconsolata", monospace;
+    margin: 0;
+    padding: 0;
+}

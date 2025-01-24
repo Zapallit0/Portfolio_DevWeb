@@ -1,0 +1,117 @@
+.navBar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--blueRibon900);
+    width: 100;
+    padding: 0.2rem 1rem;
+    color: white;
+    font-size: 1rem;
+    min-height: 5vh;
+    align-items: center;
+    justify-content: space-between;
+    overflow:hidden;
+}
+.navHamb{
+    width: 1rem;
+}
+.navBar picture img{
+    width: 68px;
+    font-size: 1.5rem;
+    font-weight:700;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+.navPhone{
+    width: 40%;
+    text-align: right;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 7vh;
+    background-color: var(--blueRibon900);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-right: 1.5rem;
+    gap: 1rem;
+    color: var(--blueRibon50);
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.navPhone button{
+    padding: 0.5rem 0rem;
+    border-radius: 15px;
+    background-color: transparent;
+    color: var(--blueRibon50);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: 3px var(--blueRibon300) solid;
+    text-decoration: none;
+}
+.phone{
+    display: flex;
+    flex-direction: column;
+}
+.comp{
+    display: none;
+}
+@media screen and (min-width: 800px){
+    .navBar{
+        justify-content: space-evenly;
+    }
+    picture{
+        width: 40%;
+    }
+    .phone{
+        display: none;
+    }
+    .comp{
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
+    .navComp{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 60%;
+        list-style: none;
+        height:100%;
+    }
+
+    .navComp li{
+        z-index: 10;
+        text-decoration: underline;
+        padding: 0 1rem;
+        cursor: pointer;
+    }
+    .navComp img{
+        position: absolute;
+        z-index: 0;
+        align-self: center;
+        width: 40%;
+        transform: translateY(3rem);
+    }
+    .navComp .mid{
+        border-left:2px solid white;
+        border-right:2px solid white;
+    }
+    .comp button{
+        padding: 0.3rem 0.3rem;
+        border-radius: 15px;
+        background-color: transparent;
+        color: var(--blueRibon50);
+        font-weight: 700;
+        font-size: 1rem;
+        border: 3px var(--blueRibon300) solid;
+        text-decoration: none;
+    }
+}
+@media screen and (min-width: 1000px){
+    .navComp li{
+        padding: 0 2rem;
+        font-size: 1.4rem;
+    }
+}
