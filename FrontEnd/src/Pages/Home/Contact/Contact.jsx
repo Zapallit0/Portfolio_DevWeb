@@ -5,23 +5,19 @@ import Phone from '../../../assets/Socials/Phone.svg'
 import Mail from '../../../assets/Socials/Mail.svg'
 import Linkedin from '../../../assets/Socials/linkedin.svg'
 import X from '../../../assets/Socials/X.svg'
+import ContactForm from '../../../services/ContactForm'
 
 function Contact() {
   return (
     <section className='contactPage'>
         <div className='contactForm'>
         <h3>
-            ¿Te gusto lo que ofrecemos?<br />
+            ¿Te gustó lo que ofrecemos?
+            <br />
             <br />
             Escríbenos: 
         </h3>
-        <form action="">
-            <input type="text" placeholder='Nombre' />
-            <input type="text" placeholder='Nombre Negocio'/>
-            <input type="email" placeholder='Correo'/>
-            <textarea type="text" placeholder='Mensaje' className='Mensaje' rows='5'/>
-            <button type='submit'>Enviar</button>
-        </form>
+        <ContactForm/>
         </div>
         <div className='contactLink'>
             <ul>
