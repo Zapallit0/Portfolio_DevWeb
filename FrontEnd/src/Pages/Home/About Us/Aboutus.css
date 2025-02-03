@@ -1,6 +1,6 @@
 .AboutUs{
     background-color: var(--blueRibon200);
-    min-height: 50vh;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -15,7 +15,6 @@ h3, p{
     font-size: 1.4rem;
     font-weight:800;
 }
-
 .AboutUs p{
     font-size: 0.9rem;
     font-weight:700;

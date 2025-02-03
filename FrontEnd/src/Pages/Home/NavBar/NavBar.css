@@ -16,7 +16,7 @@
     width: 1rem;
 }
 .navBar picture img{
-    width: 70px;
+    height: 50px;
     font-size: 1.5rem;
     font-weight:700;
 }
@@ -58,9 +58,10 @@
 @media screen and (min-width: 800px){
     .navBar{
         justify-content: space-evenly;
+        padding: 0.5rem 2rem;
     }
-    picture{
-        width: 40%;
+    .navBar a{
+        width: 35%;
     }
     .phone{
         display: none;

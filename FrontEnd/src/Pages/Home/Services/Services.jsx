@@ -13,7 +13,7 @@ function Services() {
         {
             "Image":WebSimple,
             "Title":"Desarrollo WEB",
-            "Description":"Creamos páginas web personalizadas, desde diseños estáticos con información clara y atractiva, hasta portales interactivos que ofrecen servicios, conectan con tus usuarios y fomentan una experiencia única. Adaptamos cada detalle para cumplir tus objetivos y destacar en el mundo digital."
+            "Description":"Creamos páginas web personalizadas, desde diseños estáticos con información clara y atractiva, hasta portales interactivos que ofrecen servicios, conectan con tus usuarios y fomentan una experiencia única."
         },
         {
             "Image":WebAmplia,
@@ -33,13 +33,11 @@ function Services() {
         </div>
         <div className='servicesList'>
             { ServiciosInfo.map((servicio,index)=>(
-             <div className='serviceItem' key={index}>
-
+            <div className='serviceItem' key={index}>
                  <img src={servicio.Image} alt="Service" width='300px' height='220px' />
-
              <h4>{servicio.Title}</h4>
              <p>{servicio.Description}</p>
-         </div>   
+            </div>   
             ))
             }
         </div>
@@ -48,11 +46,11 @@ function Services() {
                 <h4>INCLUYE</h4>
                 <li>
                     <img src={Check} alt="check" width='23px' height='23px'/>
-                    <p><span>Cotización especial</span> para cada proyecto, y negocio</p>
+                    <p><span>Cotización especial</span> para cada proyecto, y negocio...</p>
                 </li>
                 <li>
                     <img src={Check} alt="check" width='23px' height='23px'/>
-                    <p><span>Diseño personalizado</span> páginas de referencia y prototipos</p>
+                    <p><span>Diseño personalizado</span> páginas de referencia y prototipos...</p>
                 </li>
                 <li>
                     <img src={Check} alt="check" width='23px' height='23px'/>
@@ -64,7 +62,7 @@ function Services() {
                 </li>
                 <li>
                     <img src={Check} alt="check" width='23px' height='23px'/>
-                    <p>Sistema Web para Negocios y ERP contará con <span>más revisiones y cambios extra</span></p>
+                    <p>Sistema Web para Negocios y ERP contará con <span>más revisiones y cambios extra</span>...</p>
                 </li>
             </ul>
         </div>

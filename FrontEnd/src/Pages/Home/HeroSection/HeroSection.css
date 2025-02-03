@@ -1,6 +1,6 @@
 .HeroSec{
     width: 100vw;
-    min-height: 130vh;
+    min-height: 110vh;
     height: fit-content;
     background-color: #101720;
     display: flex;
@@ -140,7 +140,7 @@
 @media screen and (min-width:1080px) {
     .HeroSec{
         gap: 2rem;
-        padding-top: 4rem;
+        padding-top: 10rem;
     }
     .heroText{
         width: 80%;

@@ -21,8 +21,14 @@
     font-weight:600;
     font-size:1.1rem;
 }
-.emailContact form button:hover{
+.emailContact button:hover{
     background-color: var(--blueRibon800);
+}
+.emailContact 
+input:focus,
+textarea:focus
+{
+    outline: none;
 }
 @media screen and (min-width: 720px){
     .emailContact {
