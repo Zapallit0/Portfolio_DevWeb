@@ -80,12 +80,30 @@
         list-style: none;
         height:100%;
     }
-
     .navComp li{
         z-index: 10;
-        text-decoration: underline;
         padding: 0 1rem;
         cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .navComp li::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #BBD8FF; /* matches your hamburger color */
+        transition: width 0.3s ease;
+    }
+    /* Expand underline on hover */
+    .navComp li:hover::before {
+        width: 100%;
+    }
+    .navComp li:hover {
+        color: #BBD8FF;
+        transform: translateY(-5px);
+        transform: scale(1.1);
     }
     .navComp img{
         position: absolute;
@@ -93,10 +111,6 @@
         align-self: center;
         width: 40%;
         transform: translateY(3rem);
-    }
-    .navComp .mid{
-        border-left:2px solid white;
-        border-right:2px solid white;
     }
     .comp button{
         padding: 0.3rem 0.3rem;
@@ -111,7 +125,7 @@
 }
 @media screen and (min-width: 1100px){
     .navComp li{
-        padding: 0 2rem;
-        font-size: 1.4rem;
+        padding: 0 1rem;
+        font-size: 1.6rem;
     }
 }
