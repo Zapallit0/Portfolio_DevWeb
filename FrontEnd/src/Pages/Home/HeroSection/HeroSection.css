@@ -1,6 +1,6 @@
 .HeroSec{
     width: 100vw;
-    min-height: 130vh;
+    min-height: 110vh;
     height: fit-content;
     background-color: #101720;
     display: flex;
@@ -41,6 +41,7 @@
 .heroSocials img{
     height: 25px;
     width: 25px;
+    filter: invert(98%) sepia(2%) saturate(43%) hue-rotate(53deg) brightness(120%) contrast(100%);
 }
 .heroCourusel1{
     display: flex;
@@ -140,7 +141,7 @@
 @media screen and (min-width:1080px) {
     .HeroSec{
         gap: 2rem;
-        padding-top: 4rem;
+        padding-top: 10rem;
     }
     .heroText{
         width: 80%;

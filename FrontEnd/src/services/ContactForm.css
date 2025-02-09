@@ -1,0 +1,43 @@
+.emailContact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+}
+.emailContact form input,textarea{
+    font-size: 1rem;
+    background-color:transparent;
+    border: none;
+    color:#FFFFFF;
+    border-bottom: 1px #FFFFFF solid;
+}
+.emailContact form button{
+    width: 30%;
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: var(--blueRibon600);
+    border: none;
+    color: var(--blueRibon200);
+    font-weight:600;
+    font-size:1.1rem;
+}
+.emailContact button:hover{
+    background-color: var(--blueRibon800);
+}
+.emailContact 
+input:focus,
+textarea:focus
+{
+    outline: none;
+}
+@media screen and (min-width: 720px){
+    .emailContact {
+        gap: 2.5rem;
+    }
+    .emailContact input,textarea{
+        font-size: 1.4rem;
+    }
+    .emailContact  button{
+        font-size: 1.2rem;
+    }
+}

@@ -5,23 +5,19 @@ import Phone from '../../../assets/Socials/Phone.svg'
 import Mail from '../../../assets/Socials/Mail.svg'
 import Linkedin from '../../../assets/Socials/linkedin.svg'
 import X from '../../../assets/Socials/X.svg'
+import ContactForm from '../../../services/ContactForm'
 
 function Contact() {
   return (
     <section className='contactPage'>
         <div className='contactForm'>
         <h3>
-            ¿Te gusto lo que ofrecemos?<br />
+            ¿Te gustó lo que ofrecemos?
+            <br />
             <br />
             Escríbenos: 
         </h3>
-        <form action="">
-            <input type="text" placeholder='Nombre' />
-            <input type="text" placeholder='Nombre Negocio'/>
-            <input type="email" placeholder='Correo'/>
-            <textarea type="text" placeholder='Mensaje' className='Mensaje' rows='5'/>
-            <button type='submit'>Enviar</button>
-        </form>
+        <ContactForm/>
         </div>
         <div className='contactLink'>
             <ul>
@@ -46,14 +42,14 @@ function Contact() {
                         <img src={Linkedin} alt="Linkedin"height='30px' width='30px'/>
                     </div>
                     <h5>LinkedIn: </h5>
-                    <a href='https://www.linkedin.com/in/jhersvin-villodas-quinto-98669b233/'>Jhersvin Villodas</a>
+                    <a href='https://www.linkedin.com/in/jhersvin-villodas-quinto-98669b233/'>Digital Rescue</a>
                 </li>
                 <li>
                     <div>
                         <img src={X} alt="X" height='30px' width='30px'/>
                     </div>
                     <h5>X/Twitter</h5>
-                    <a href='https://x.com/Zapallito4u'>JhersDev</a>
+                    <a href='https://x.com/Zapallito4u'>DRescue</a>
                 </li>
             </ul>
         </div>
