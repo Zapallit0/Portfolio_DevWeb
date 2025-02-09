@@ -7,6 +7,7 @@
     align-items: center;
     gap: 2rem;
     color:var(--blueRibon950);
+    padding: 2rem 0;
 }
 h3, p{
     width: 80%;
@@ -20,17 +21,13 @@ h3, p{
     font-weight:700;
 }
 .AboutUs button{
-    align-self: self-start;
+    align-self: center;
     padding: 0.8rem;
-    margin-left:10%;
     width:40%;
     border: none;
     color: var(--blueRibon200);
-    background-color:var(--blueRibon700) ;
-    font-weight:700;
-}
-.AboutUs button:hover{
-    background-color: var(--blueRibon800);
+    background-color:var(--blueRibon800) ;
+    font-weight:800;
 }
 .AboutUs button:active{
     background-color: var(--blueRibon900);

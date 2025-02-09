@@ -42,14 +42,14 @@ function Contact() {
                         <img src={Linkedin} alt="Linkedin"height='30px' width='30px'/>
                     </div>
                     <h5>LinkedIn: </h5>
-                    <a href='https://www.linkedin.com/in/jhersvin-villodas-quinto-98669b233/'>Jhersvin Villodas</a>
+                    <a href='https://www.linkedin.com/in/jhersvin-villodas-quinto-98669b233/'>Digital Rescue</a>
                 </li>
                 <li>
                     <div>
                         <img src={X} alt="X" height='30px' width='30px'/>
                     </div>
                     <h5>X/Twitter</h5>
-                    <a href='https://x.com/Zapallito4u'>JhersDev</a>
+                    <a href='https://x.com/Zapallito4u'>DRescue</a>
                 </li>
             </ul>
         </div>
