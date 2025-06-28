@@ -71,4 +71,3 @@ Aquí algunos ejemplos de nuestro trabajo:
 ⭐ ¡Apóyanos!
 
 Si te gusta este proyecto, no olvides dejar una estrella ⭐ en el repositorio. ¡Gracias! 🙌
-```
