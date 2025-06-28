@@ -72,10 +72,3 @@ Aquí algunos ejemplos de nuestro trabajo:
 
 Si te gusta este proyecto, no olvides dejar una estrella ⭐ en el repositorio. ¡Gracias! 🙌
 ```
-### 📋 Pasos a seguir:
-1. Personaliza las secciones reemplazando los textos y enlaces con la información real de Digital Rescue.
-2. Sube las imágenes necesarias al repositorio y ajusta las rutas.
-3. Asegúrate de probar todos los enlaces antes de publicarlo.
-
-¿Te gustaría que te ayude a personalizarlo aún más?
-```
