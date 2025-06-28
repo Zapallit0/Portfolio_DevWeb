@@ -60,13 +60,6 @@ Aquí algunos ejemplos de nuestro trabajo:
   ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white&style=for-the-badge)
 
 ---
-
-## 🛠️ Cómo usar este repositorio
-
-1. Clona este repositorio en tu máquina local:
-   ```bash
-   git clone https://github.com/tu-usuario/digital-rescue.git
-
    
 ⭐ ¡Apóyanos!
 
