@@ -23,7 +23,7 @@ const [showMenu, setShowMenu]=useState(false);
                 <ul className='navComp'>
                     <img src={Circle} alt="background" />
                     <li>Home</li>
-                    <li className='mid'>Servicios</li>
+                    <li>Servicios</li>
                     <li>Nosotros</li>
                 </ul>
                 <button>

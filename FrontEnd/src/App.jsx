@@ -1,20 +1,23 @@
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from '../src/Pages/Home/NavBar/NavBar'
-import HeroSection from './Pages/Home/HeroSection/HeroSection'
-import Aboutus from './Pages/Home/About Us/Aboutus'
-import Services from './Pages/Home/Services/Services'
-import Contact from './Pages/Home/Contact/Contact'
 import Footer from './Pages/Home/Footer/Footer'
+import HomePage from './Pages/Home/HomePage.jsx'
+import AboutPage from './Pages/AboutUs/AboutUs.jsx'
+import ServicesPage from './Pages/Services/Services.jsx'
+import ContactPage from './Pages/ContactUs/ContactUs.jsx'
 
 function App() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <main>
-        <HeroSection />
-        <Aboutus />
-        <Services />
-        <Contact/>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/nosotros" element={<AboutPage />} />
+          <Route path="/servicios" element={<ServicesPage />} />
+          <Route path="/contacto" element={<ContactPage />} />
+        </Routes>
       </main>
       <Footer />
     </>
