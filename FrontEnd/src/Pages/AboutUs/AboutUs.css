@@ -1,0 +1,93 @@
+.AboutUsPage{
+    background-color: #101720;
+    color: white;
+}
+/* Hero */
+.HeroAboutUs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    gap: 5%;
+}
+.HeroAboutUs .Profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    width:35rem;
+    background-image: url('../../assets/Perfil/BackgroundPerfil.svg');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.HeroAboutUs .Profile img{
+    transform: translateY(-10px); 
+}
+.HeroAboutUs .Content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+.HeroAboutUs .Content h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.HeroAboutUs .Content h1 span{
+    font-size: 4rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.HeroAboutUs .Content h1 span:nth-child(1) {
+    margin-left: 0;
+}
+.HeroAboutUs .Content h1 span:nth-child(2) {
+    margin-left: 10rem;
+}
+.HeroAboutUs .Content h1 span:nth-child(3) {
+    margin-left: 22rem;
+}
+.HeroAboutUs .Content h5 {
+    font-size: 1.2rem;
+    color: #BCD2FF;
+}
+.HeroAboutUs .Content button{
+    width: 10rem;
+    align-self: center;
+    border: none;
+    padding: 0.6rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color:#1C2F93;
+    color: white;
+    font-weight: 900;
+    font-size: 1rem;
+    transition: scale 0.3s ease-out;
+}
+.HeroAboutUs .Content button:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+
+/* Social Links */
+.SocialLinks{
+    align-self: center;
+    display: flex;
+    gap:2rem;
+}
+.SocialLinks li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    background-color:;
+}
+.SocialLinks li a{
+    list-style: none;
+}
