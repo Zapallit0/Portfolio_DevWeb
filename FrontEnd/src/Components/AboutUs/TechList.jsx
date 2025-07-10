@@ -1,4 +1,3 @@
-import React from 'react';
 
 function TechList({ technologies }) {
   return (
@@ -6,7 +5,7 @@ function TechList({ technologies }) {
       <ul>
         {technologies.map(tech => (
           <li key={tech.name}>
-            <img src={tech.icon} alt={`${tech.name} icon`} />
+            <img src={tech.icon} alt={`${tech.name} icon`} width={'50px'}/>
             {tech.name}
           </li>
         ))}

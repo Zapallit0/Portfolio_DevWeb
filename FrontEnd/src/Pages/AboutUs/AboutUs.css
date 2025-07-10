@@ -28,7 +28,7 @@
 .HeroAboutUs .Content {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     text-align: center;
 }
 .HeroAboutUs .Content h1 {
@@ -52,7 +52,7 @@
 }
 .HeroAboutUs .Content h5 {
     font-size: 1.2rem;
-    color: #BCD2FF;
+    color: #BBD8FF;
 }
 .HeroAboutUs .Content button{
     width: 10rem;
@@ -65,8 +65,8 @@
     align-items: center;
     background-color:#1C2F93;
     color: white;
-    font-weight: 900;
-    font-size: 1rem;
+    font-weight: 800;
+    font-size: 1.1rem;
     transition: scale 0.3s ease-out;
 }
 .HeroAboutUs .Content button:hover{
@@ -78,16 +78,80 @@
 .SocialLinks{
     align-self: center;
     display: flex;
-    gap:2rem;
+    gap:4rem;
 }
 .SocialLinks li{
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style: none;
     width: 50px;
     height: 50px;
-    background-color:;
+    background-color:#8EB5FF;
+    border-radius: 25%;
+    transition: background-color 0.3s ease;
 }
 .SocialLinks li a{
     list-style: none;
+    display: flex;
+    align-items: center;
+}
+.SocialLinks li a img {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(12%) saturate(7485%) hue-rotate(207deg) brightness(95%) contrast(108%);
+    transition: filter 0.3s ease;
+}
+.SocialLinks li:hover {
+    background-color: #1C2F93;
+}
+.SocialLinks li a img:hover {
+    filter: brightness(0) saturate(100%) invert(61%) sepia(75%) saturate(347%) hue-rotate(188deg) brightness(100%) contrast(101%);
+}
+
+/* TechStack */
+.TechStack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.TechStack h4{
+    font-size: 40px;
+}
+.TechStack .TechList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.Languages{
+    background-color:#BBD8FF;
+    padding: 1rem;
+    border-radius: 65px;
+}
+.Languages ul{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 45rem;
+    height: 6rem;
+}
+.Languages li{
+    display: flex;
+    flex-direction: column;
+    color:#1c2f93;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    gap: 0.5rem;
+}
+.Languages li img{
+    filter: brightness(0) saturate(100%) invert(18%) sepia(32%) saturate(4243%) hue-rotate(217deg) brightness(96%) contrast(110%);    
+}
+
+/* Portafolio */
+.ProyectCard{
+    
 }

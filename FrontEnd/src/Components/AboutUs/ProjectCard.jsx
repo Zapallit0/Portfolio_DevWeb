@@ -2,7 +2,7 @@ import React from 'react';
 
 function ProjectCard({ project }) {
   return (
-    <div className='Proyect'>
+    <div className='ProyectCard'>
       <img src={project.image} alt={project.name} />
       <div className='Details'>
         <span>{project.name}</span>

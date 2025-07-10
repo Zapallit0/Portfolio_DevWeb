@@ -8,8 +8,27 @@ function Portfolio() {
       description: 'Pagina web para consultora nueva en Lima',
       techStack: ['JavaScript', 'React'],
       image: ''
+    },
+    {
+      id: 2,
+      name: 'Safety Web',
+      description: 'Pagina web para consultora nueva en Lima',
+      techStack: ['JavaScript', 'React','MongoDB'],
+      image: ''
+    },
+    {
+      id: 3,
+      name: 'Safety Web',
+      description: 'Pagina web para consultora nueva en Lima',
+      techStack: ['JavaScript', 'React'],
+      image: ''
+    },{
+      id: 4,
+      name: 'Safety Web',
+      description: 'Pagina web para consultora nueva en Lima',
+      techStack: ['JavaScript', 'React'],
+      image: ''
     }
-
   ];
 
   return (
