@@ -6,7 +6,7 @@ Bienvenido/a a **Digital Rescue**: Tu solución integral para el desarrollo de p
 
 ## 📸 Portada
 
-![Digital Rescue Cover](./Frontend/Digital_Rescue_Developers.png)
+![Digital Rescue Cover](./FrontEnd/Digital_Rescue_Developers.png)
 
 
 ---
