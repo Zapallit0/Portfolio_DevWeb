@@ -152,6 +152,65 @@
 }
 
 /* Portafolio */
+.Portafolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
 .ProyectCard{
-    
+    border: white 2px solid;
+    border-radius: 50px;
+    width: 440px;
+    height: 320px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.ProyectCard img{
+    object-fit:cover;
+    width: 100%;
+    height: 50%;
+}
+.ProyectCard button{
+    align-self: center;
+    width: 6rem;
+    display: flex;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-radius:25px;
+    background-color: #142DE1;
+    border: none;
+    color:white;
+    font-weight: 900;
+    font-size: 1rem;
+}
+.ProyectData{
+    display: flex;
+    border-top: white 2px solid;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.ProyectData .Details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 50%;
+    padding: 0 0.5rem;
+}
+.ProyectData .Details ul{
+    list-style: none;
+    display: flex;
+}
+.ProyectData span{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.ProyectData p{
+    font-size: 12px;
+    font-weight: 800;
 }

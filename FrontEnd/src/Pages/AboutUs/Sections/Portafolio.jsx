@@ -1,5 +1,10 @@
 import React from 'react'
 import ProjectCard from '../../../Components/AboutUs/ProjectCard';
+import Portafolio from '../../../assets/Proyects/FIRSTPORTAFOLIO.png'
+import Forever from '../../../assets/Proyects/ForeverLivingNoemi.png'
+import Game from '../../../assets/Proyects/THEBINDINGOFLUFFY.png'
+import Safety from '../../../assets/Proyects/THEBINDINGOFLUFFY.png'
+
 function Portfolio() {
   const projects = [
     {
@@ -7,27 +12,27 @@ function Portfolio() {
       name: 'Safety Web',
       description: 'Pagina web para consultora nueva en Lima',
       techStack: ['JavaScript', 'React'],
-      image: ''
+      image:Safety
     },
     {
       id: 2,
-      name: 'Safety Web',
-      description: 'Pagina web para consultora nueva en Lima',
+      name: 'Forever Living',
+      description: 'Página web para controlar stock de productos naturales',
       techStack: ['JavaScript', 'React','MongoDB'],
-      image: ''
+      image: Forever
     },
     {
       id: 3,
-      name: 'Safety Web',
-      description: 'Pagina web para consultora nueva en Lima',
+      name: 'Portafolio #1',
+      description: 'Primer portafolio con React.js',
       techStack: ['JavaScript', 'React'],
-      image: ''
+      image: Portafolio
     },{
       id: 4,
-      name: 'Safety Web',
+      name: 'Videojuego 2D',
       description: 'Pagina web para consultora nueva en Lima',
       techStack: ['JavaScript', 'React'],
-      image: ''
+      image: Game
     }
   ];
 
