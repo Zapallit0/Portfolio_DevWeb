@@ -15,7 +15,7 @@ function NavBar() {
   return (
     <nav className='navBar'>
       <Link to="/">
-        <img src={Logo} alt="JVQ" height="50px"/>
+        <img src={Logo} alt="JVQ" height="40px"/>
       </Link>
       
       <div className='phone'>
@@ -37,7 +37,9 @@ function NavBar() {
           <li><Link to="/servicios">Servicios</Link></li>
           <li><Link to="/nosotros">Nosotros</Link></li>
         </ul>
-          <button><Link to="/contacto">Contáctanos</Link></button>
+        <button className='ctabutton'>
+          <Link to="/contacto">Contáctanos</Link>
+        </button>
       </div>
     </nav>
   )

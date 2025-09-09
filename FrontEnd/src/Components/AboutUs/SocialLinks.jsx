@@ -7,10 +7,10 @@ import Instagram from '../../assets/Socials/instagram.svg'
 
 function SocialLinks() {
   const socialLinks = [
-    { name: 'Linkedin', icon:  `${Linkedin}`, url: '#' },
-    { name: 'Twitter/X', icon:  `${X}`, url: '#' },
-    { name: 'Github', icon:  `${GitHub}`, url: '#' },
-    { name: 'Instagram', icon:  `${Instagram}`, url: '#' }
+    { name: 'Linkedin', icon:  `${Linkedin}`, url: 'https://www.linkedin.com/in/jhersvin-villodas-quinto-98669b233/' },
+    { name: 'Twitter/X', icon:  `${X}`, url: 'https://x.com/Zapallito4u' },
+    { name: 'Github', icon:  `${GitHub}`, url: 'https://github.com/Zapallit0' },
+    { name: 'Instagram', icon:  `${Instagram}`, url: 'https://www.instagram.com/jhersdev/' }
   ];
 
   return (

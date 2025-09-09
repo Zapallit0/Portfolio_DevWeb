@@ -1,4 +1,3 @@
-import React from 'react'
 import SocialLinks from '../../../Components/AboutUs/SocialLinks'
 import PHOTO from '../../../assets/Perfil/PhotoPerfil.svg';
 import { HardDriveDownload } from 'lucide-react';
@@ -16,7 +15,11 @@ function HeroSection() {
           <span> QUINTO</span>
         </h1>
         <h5>- Desarrollador Web - Ingeniero de Software - Freelancer</h5>
-        <button>
+        <button
+          href="../../../assets/PDF/CV-Jhersvin.pdf" 
+          download="CV_Jhersvin.pdf"
+          className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-xl shadow-md hover:bg-blue-700 transition"
+        >
           <HardDriveDownload/>
           CURRICULUM
         </button>
