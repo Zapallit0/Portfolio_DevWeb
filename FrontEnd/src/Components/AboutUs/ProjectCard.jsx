@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'lucide-react';
+import { Link as RouterLink } from 'react-router-dom';
+import { ExternalLink } from 'lucide-react';
 
 function ProjectCard({ project, techLogos }) {
   return (
@@ -26,7 +27,12 @@ function ProjectCard({ project, techLogos }) {
           </ul>
         </div>
       </div>
-      <button><Link size={16} />Link</button>  
+      <a href={project.link} target="_blank" rel="noopener noreferrer">
+        <button>
+          <ExternalLink size={16} />
+          Link
+        </button>
+      </a> 
     </div>
   );
 }

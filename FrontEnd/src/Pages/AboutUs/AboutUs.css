@@ -160,7 +160,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:2rem;
+    gap:3rem;
 }
 .Portafolio h3{
     font-size: 1.2rem;
@@ -179,20 +179,38 @@
     width: 100%;
     height: 50%;
 }
+.ProyectCard a{
+    align-self: center;
+    text-decoration: none;
+}
+
 .ProyectCard button{
     align-self: center;
     width: 6rem;
     display: flex;
-    gap:0.5rem;
+    gap: 0.5rem;
     justify-content: center;
     align-items: center;
     padding: 0.6rem 0;
-    border-radius:25px;
+    border-radius: 25px;
     background-color: #142DE1;
     border: none;
-    color:white;
+    color: white;
     font-weight: 900;
     font-size: 1rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.ProyectCard button:hover{
+    background: linear-gradient(45deg, #142DE1, #1A37F5);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(20, 45, 225, 0.25);
+}
+
+.ProyectCard button:active{
+    transform: translateY(0);
+    transition: all 0.1s ease;
 }
 .ProyectData{
     display: flex;
@@ -201,6 +219,7 @@
     align-items: flex-start;
     justify-content: center;
 }
+
 .ProyectData .Details{
     display: flex;
     flex-direction: column;

@@ -13,6 +13,9 @@ import PostGreSQL from '../../../assets/Technologies/postgresql.svg'
 import MongoDB from '../../../assets/Technologies/mongodb.svg'
 import Node from  '../../../assets/Technologies/node.svg'
 import Java from  '../../../assets/Technologies/java.svg'
+import Git from  '../../../assets/Technologies/git.svg'
+import { link } from 'framer-motion/client';
+
 
 function Portfolio() {
   const techLogos = {
@@ -30,41 +33,46 @@ function Portfolio() {
       name: 'Safety Web',
       description: 'Pagina web para consultora de seguridad en Lima',
       techStack: ['JavaScript', 'React'],
-      image: Safety
+      image: Safety,
+      link:""
     },
     {
       id: 2,
       name: 'Forever Living',
       description: 'Página web para controlar stock de productos naturales',
       techStack: ['JavaScript', 'React', 'MongoDB'],
-      image: Forever
+      image: Forever,
+      link:"https://forevernoemi.netlify.app/"
     },
     {
       id: 3,
       name: 'Portafolio #1',
       description: 'Primer portafolio con React.js',
       techStack: ['JavaScript', 'React'],
-      image: Portafolio
+      image: Portafolio,
+      link:"https://jhersportfolio.netlify.app/"
     },
     {
       id: 4,
       name: 'Videojuego 2D',
       description: 'Videojuego 2D tipo roguelike',
       techStack: ['Java'],
-      image: Game
+      image: Game,
+      link:""
     },
     {
       id: 5,
       name: 'Lexor Smart Contracts',
       description: 'Dashboard para smart contracts',
       techStack: ['React','PostgreSQL','Node'],
-      image: Lexor
+      image: Lexor,
+      link:"https://lexorsmartproject.netlify.app"
     },
   ];
 
   return (
     <div className='Portafolio'>
-      <h3>--- Trabajos y proyectos completados</h3>
+      <h3>-- Trabajos y proyectos completados</h3>
       {projects.map(project => (
         <ProjectCard 
           key={project.id} 
@@ -72,7 +80,6 @@ function Portfolio() {
           techLogos={techLogos} 
         />
       ))}
-      <h4>Todos manejados con </h4>
     </div>
   );
 }
