@@ -1,7 +1,15 @@
 import React from 'react'
 import './Aboutus.css'
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
+
 function Aboutus() {
+  const navigate = useNavigate();
+  
+  const handleNavigateToNosotros = () => {
+    navigate('/nosotros');
+  };
+
   return (
     <section className='AboutUs'>
         <motion.h3
@@ -18,6 +26,8 @@ function Aboutus() {
         initial={{ scale: 1}}
         animate={{ scale: [1, 1.1, 1] }}
         transition={{ duration: 3.0, repeat: Infinity, ease: "easeInOut" }}
+        onClick={handleNavigateToNosotros}
+        style={{ cursor: 'pointer' }}
         >
             MÁS INFORMACIÓN
         </motion.button>

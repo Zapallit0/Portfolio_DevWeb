@@ -14,7 +14,6 @@ import MongoDB from '../../../assets/Technologies/mongodb.svg'
 import Node from  '../../../assets/Technologies/node.svg'
 import Java from  '../../../assets/Technologies/java.svg'
 import Git from  '../../../assets/Technologies/git.svg'
-import { link } from 'framer-motion/client';
 
 
 function Portfolio() {
@@ -34,7 +33,7 @@ function Portfolio() {
       description: 'Pagina web para consultora de seguridad en Lima',
       techStack: ['JavaScript', 'React'],
       image: Safety,
-      link:""
+      link:"https://safetyadvisors.io/"
     },
     {
       id: 2,
@@ -58,11 +57,19 @@ function Portfolio() {
       description: 'Videojuego 2D tipo roguelike',
       techStack: ['Java'],
       image: Game,
-      link:""
+      link:"https://github.com/Zapallit0/TheBindingOfLuffy"
     },
     {
       id: 5,
       name: 'Lexor Smart Contracts',
+      description: 'Dashboard para smart contracts',
+      techStack: ['React','PostgreSQL','Node'],
+      image: Lexor,
+      link:"https://lexorsmartproject.netlify.app"
+    },
+    {
+      id: 6,
+      name: 'Black Bird',
       description: 'Dashboard para smart contracts',
       techStack: ['React','PostgreSQL','Node'],
       image: Lexor,

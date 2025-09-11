@@ -1,56 +1,109 @@
-import "./OnDevelopment.css";
-import { Link } from "react-router-dom";
-export default function OnDevelopment() {
+import React from 'react';
+import './OnDevelopment.css';
+
+const OnDevelopment = () => {
   return (
-     <div className="under-construction">
+    <div className="under-construction">
       <div className="text-section">
         <h1>🚧 En Construcción 🚧</h1>
         <p>Estamos trabajando en esta sección, vuelve pronto.</p>
       </div>
 
-      {/* SVG Obrero martillando */}
-      <div className="svg-wrap" role="img" aria-label="Obrero martillando">
+      <div className="svg-wrap">
         <svg
-          viewBox="0 0 300 300"
+          viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
           className="construction-svg"
         >
-          {/* Obrero */}
-          <g id="worker" transform="translate(150,160)">
-            {/* Piernas */}
-            <rect x="-18" y="40" width="12" height="45" rx="4" fill="#101720" />
-            <rect x="6" y="40" width="12" height="45" rx="4" fill="#101720" />
-            {/* Torso */}
-            <rect x="-22" y="0" width="44" height="55" rx="8" fill="#1c2f93" />
-            {/* Cabeza */}
-            <circle cx="0" cy="-25" r="14" fill="#ffffff" stroke="#101720" strokeWidth="3" />
-            {/* Casco */}
-            <path d="M -18 -28 a18 18 0 0 1 36 0 v8 h-36z" fill="#1c2f93" stroke="#101720" strokeWidth="3" />
-
-            {/* Brazo izquierdo fijo */}
-            <rect x="-38" y="10" width="18" height="10" rx="4" fill="#1c2f93" />
-
-            {/* Brazo derecho animado con martillo */}
-            <g id="arm" transform="translate(20,15)">
-              <rect x="0" y="-5" width="30" height="10" rx="4" fill="#1c2f93" />
-              <circle cx="32" cy="0" r="6" fill="#ffffff" stroke="#101720" strokeWidth="2" />
-              {/* Martillo */}
-              <g transform="translate(38,0)">
-                <rect x="0" y="-2" width="18" height="4" rx="2" fill="#101720" />
-                <rect x="14" y="-8" width="6" height="16" rx="2" fill="#101720" />
-              </g>
-            </g>
+          {/* Floor line */}
+          <rect 
+            x="0" 
+            y="180" 
+            width="200" 
+            height="4" 
+            fill="#555555"
+          />
+          
+          {/* Hammer group */}
+          <g id="hammer">
+            {/* Mango del martillo */}
+            <rect 
+              x="95" 
+              y="60" 
+              width="10" 
+              height="100" 
+              rx="5" 
+              fill="#8B4513"
+            />
+            {/* Cabeza del martillo */}
+            <rect 
+              x="80" 
+              y="50" 
+              width="40" 
+              height="20" 
+              rx="4" 
+              fill="#C0C0C0"
+            />
+            {/* Reflejo en el martillo */}
+            <rect 
+              x="85" 
+              y="52" 
+              width="8" 
+              height="16" 
+              rx="2" 
+              fill="#E8E8E8"
+            />
           </g>
-
-          {/* Viga para golpear */}
-          <rect x="100" y="210" width="100" height="18" rx="4" fill="#ffffff" stroke="#101720" strokeWidth="3" />
+          
+          {/* Partículas de impacto */}
+          <g className="impact-particles">
+            <circle 
+              cx="70" 
+              cy="175" 
+              r="3" 
+              fill="#FFD700" 
+              className="particle particle-1"
+            />
+            <circle 
+              cx="130" 
+              cy="175" 
+              r="2" 
+              fill="#FFA500" 
+              className="particle particle-2"
+            />
+            <circle 
+              cx="100" 
+              cy="175" 
+              r="2.5" 
+              fill="#FF6347" 
+              className="particle particle-3"
+            />
+            <circle 
+              cx="85" 
+              cy="178" 
+              r="2" 
+              fill="#32CD32" 
+              className="particle particle-1"
+            />
+            <circle 
+              cx="115" 
+              cy="178" 
+              r="1.5" 
+              fill="#FF69B4" 
+              className="particle particle-2"
+            />
+          </g>
         </svg>
       </div>
 
-      {/* Botón para volver a Home */}
-      <Link to="/" className="back-button">
+      <button 
+        className="back-button"
+        onClick={() => window.history.back()}
+      >
         Volver al inicio
-      </Link>
+      </button>
     </div>
   );
-}
+};
+
+export default OnDevelopment;

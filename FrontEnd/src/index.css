@@ -19,6 +19,7 @@
 }
 html, body {
   overflow-x: hidden;
+  background-color: #101720;
 }
 .door-overlay {
   background: linear-gradient(45deg, #1a1a1a 25%, #2a2a2a 25%, #2a2a2a 50%, #1a1a1a 50%, #1a1a1a 75%, #2a2a2a 75%);

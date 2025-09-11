@@ -59,8 +59,8 @@ const pageVariants = {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 0.6,
-      delay: 0.4, // Wait for doors to start opening
+      duration: 0.8,
+      delay: 0.2, // Wait longer for doors to start opening
       ease: "easeOut"
     }
   },
@@ -93,7 +93,7 @@ function App() {
             exit="exit"
             style={{ position: 'relative' }}
           >
-            {/* Left Door */}
+            {/* Left Door with Left Half of Logo */}
             <motion.div
               variants={doorVariants}
               style={{
@@ -104,11 +104,41 @@ function App() {
                 height: '100vh',
                 backgroundColor: '#1a1a1a',
                 zIndex: 1000,
-                pointerEvents: 'none'
+                pointerEvents: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center', // Center the logo container first
               }}
-            />
+            >
+              <div style={{
+                width: '200px',
+                height: '200px', // Full logo height
+                overflow: 'hidden',
+                position: 'relative',
+                marginLeft: 'auto', // Push to right side of screen
+                backgroundColor: 'rgba(255,0,0,0.2)' // Debug: temporary red background
+              }}>
+                <img
+                  src="./assets/Logo/2.svg"
+                  alt="Logo Left Half"
+                  onError={(e) => {
+                    console.log('Left logo failed to load:', e.target.src);
+                    e.target.style.display = 'none';
+                  }}
+                  onLoad={() => console.log('Left logo loaded successfully')}
+                  style={{
+                    width: '400px',
+                    height: '200px',
+                    objectFit: 'contain',
+                    position: 'absolute',
+                    right: '0px',
+                    top: '0px',
+                    border: '2px solid yellow'
+                  }}
+                />
+              </div>
+            </motion.div>
             
-            {/* Right Door */}
             <motion.div
               variants={doorVariantsRight}
               style={{
@@ -119,9 +149,40 @@ function App() {
                 height: '100vh',
                 backgroundColor: '#1a1a1a',
                 zIndex: 1000,
-                pointerEvents: 'none'
+                pointerEvents: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
               }}
-            />
+            >
+              <div style={{
+                width: '200px', 
+                height: '200px',
+                overflow: 'hidden',
+                position: 'relative',
+                marginRight: 'auto', 
+                backgroundColor: 'rgba(0,255,0,0.2)'
+              }}>
+                <img
+                  src="./assets/Logo/2.svg"
+                  alt="Logo Right Half"
+                  onError={(e) => {
+                    console.log('Right logo failed to load:', e.target.src);
+                    e.target.style.display = 'none';
+                  }}
+                  onLoad={() => console.log('Right logo loaded successfully')}
+                  style={{
+                    width: '400px',
+                    height: '200px',
+                    objectFit: 'contain',
+                    position: 'absolute',
+                    left: '-200px',
+                    top: '0px',
+                    border: '2px solid blue'
+                  }}
+                />
+              </div>
+            </motion.div>
 
             {/* Page Content */}
             <motion.div variants={pageVariants}>
