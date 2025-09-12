@@ -1,23 +1,40 @@
+// SoftSkills.jsx
 import React from 'react'
 import SkillsList from '../../../Components/AboutUs/SkillsList.jsx';
-SkillsList
+
 function SoftSkills() {
   const softSkills = [
-    'ORGANIZADO',
-    'BUEN COMUNICADOR',
-    'AUTO MOTIVADO',
-    'CONFIABLE',
-    'TRABAJADOR',
-    'RESPONSABLE'
+    {
+      name: 'ORGANIZADO',
+      icon: 'CheckCircle'
+    },
+    {
+      name: 'BUEN COMUNICADOR',
+      icon: 'MessageCircle'
+    },
+    {
+      name: 'AUTO MOTIVADO',
+      icon: 'Zap'
+    },
+    {
+      name: 'CONFIABLE',
+      icon: 'Shield'
+    },
+    {
+      name: 'TRABAJADOR',
+      icon: 'Briefcase'
+    },
+    {
+      name: 'RESPONSABLE',
+      icon: 'Users'
+    }
   ];
 
   return (
     <div className='SoftSkills'>
-      <h3>SOFT SKILLS</h3>
-      <div>
-        <img src="" alt="Skill decoration" />
+      <h3>&gt;&gt; Soft Skills &lt;&lt;</h3>
+      <div className='skills-container'>
         <SkillsList skills={softSkills} />
-        <img src="" alt="Skill decoration" />
       </div>
     </div>
   );
