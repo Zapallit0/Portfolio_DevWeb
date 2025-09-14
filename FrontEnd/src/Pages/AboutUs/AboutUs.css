@@ -255,129 +255,151 @@
 }
 /* Skills */
 
-/* SoftSkills.css */
 .SoftSkills {
-  width: 100%;
-  padding: 4rem 0;
-  background-color: #1a1a2e;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+          width: 100%;
+          padding: 4rem 0;
+          background-color: #101720;
+          position: relative;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
 
-.SoftSkills h3 {
-  text-align: center;
-  color: white;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 3rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-family: 'Arial', sans-serif;
-}
+        .SoftSkills h3 {
+          text-align: center;
+          color: white;
+          font-size: 2.5rem;
+          font-weight: bold;
+          margin-bottom: 3rem;
+          letter-spacing: 3px;
+        }
 
-.skills-container {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+        .skills-container {
+          position: relative;
+          width: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
-/* Círculos decorativos en los lados */
-.skills-container::before,
-.skills-container::after {
-  content: '';
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background-color: #BBD8FF;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
+        .decorative-circle {
+          content: '';
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          background-color: #BBD8FF;
+          border-radius: 50%;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 1;
+        }
 
-.skills-container::before {
-  left: -100px; /* Medio círculo izquierdo */
-}
+        .left-circle {
+          left: -200px;
+        }
 
-.skills-container::after {
-  right: -100px; /* Medio círculo derecho */
-}
+        .right-circle {
+          right: -200px;
+        }
 
-/* Contenedor principal de skills */
-.SkillsList {
-  background-color: #BBD8FF;
-  padding: 2rem;
-  border-radius: 80px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  gap: 2.5rem;
-  position: relative;
-  z-index: 2;
-  min-width: 80%;
-  max-width: 1000px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
+        .SkillsList {
+          background-color: #BBD8FF;
+          padding: 1.2rem;
+          border-radius: 100px;
+          display: flex;
+          justify-content: space-around;
+          align-items: start;
+          list-style: none;
+          margin: 0;
+          gap: 1.5rem;
+          position: relative;
+          z-index: 2;
+          min-width: 80%;
+          max-width: 1000px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
 
-/* Cada item de skill */
-.SkillsList li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  transition: transform 0.3s ease;
-}
+        .SkillsList li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+          transition: transform 0.3s ease;
+        }
 
-.SkillsList li:hover {
-  transform: translateY(-5px);
-}
+        .SkillsList li:hover {
+          transform: translateY(-5px);
+        }
 
-/* Contenedor circular del icono */
-.SkillsList li .skill-icon {
-  width: 70px;
-  height: 70px;
-  background-color: #141A57;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(20, 26, 87, 0.3);
-}
+        .SkillsList li .skill-icon {
+          width: 100px;
+          height: 100px;
+          background-color: #141A57;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(20, 26, 87, 0.3);
+        }
 
-.SkillsList li .skill-icon:hover {
-  background-color: #1e2673;
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(20, 26, 87, 0.4);
-}
+        .SkillsList li .skill-icon:hover {
+          background-color: #1e2673;
+          transform: scale(1.05);
+          box-shadow: 0 6px 20px rgba(20, 26, 87, 0.4);
+        }
 
-.SkillsList li .skill-icon svg {
-  width: 32px;
-  height: 32px;
-  color: white;
-  stroke-width: 2;
-}
+        .SkillsList li .skill-icon img {
+          width: 65px;
+          height: 65px;
+          filter: brightness(0) saturate(100%) invert(75%) sepia(44%) saturate(299%) hue-rotate(186deg) brightness(102%) contrast(102%);
+          stroke-width: 2;
+        }
 
-/* Texto del skill */
-.SkillsList li span {
-  color: #141A57;
-  font-size: 0.75rem;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  max-width: 85px;
-  line-height: 1.3;
-  font-family: 'Arial', sans-serif;
-}
+        .SkillsList li span {
+          color: #141A57;
+          font-size: 1rem;
+          font-weight: 900;
+          text-align: center;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          max-width: 85px;
+          line-height: 1.3;
+        }
+
+        @media (max-width: 768px) {
+          .SkillsList {
+            flex-wrap: wrap;
+            padding: 1rem;
+            gap: 1rem;
+            border-radius: 20px;
+          }
+          
+          .decorative-circle {
+            width: 100px;
+            height: 100px;
+          }
+          
+          .left-circle {
+            left: -100px;
+          }
+          
+          .right-circle {
+            right: -100px;
+          }
+          
+          .SkillsList li .skill-icon {
+            width: 80px;
+            height: 80px;
+          }
+          
+          .SkillsList li .skill-icon img {
+            width: 50px;
+            height: 50px;
+          }
+        }
 
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -456,16 +478,16 @@
   
   .skills-container::before,
   .skills-container::after {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
   
   .skills-container::before {
-    left: -100px;
+    left: -50px;
   }
   
   .skills-container::after {
-    right: -100px;
+    right: -50px;
   }
   
   .SoftSkills h3 {

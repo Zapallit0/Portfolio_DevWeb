@@ -11,25 +11,19 @@ import {
 } from 'lucide-react';
 
 function SkillsList({ skills }) {
-  // Mapeo de iconos de Lucide React
-  const iconMap = {
-    'CheckCircle': CheckCircle,
-    'MessageCircle': MessageCircle,
-    'Zap': Zap,
-    'Shield': Shield,
-    'Briefcase': Briefcase,
-    'Users': Users,
-  };
-
   return (
     <ul className='SkillsList'>
       {skills.map((skill, index) => {
-        const IconComponent = iconMap[skill.icon] || Star;
-        
         return (
           <li key={`${skill.name}-${index}`}>
             <div className="skill-icon">
-              <IconComponent size={30} />
+              <img 
+                src={skill.icon} 
+                alt={`${skill.name} icon`}
+                className="skill-icon-img"
+                width={"70px"}
+                height={"70px"}
+              />
             </div>
             <span>{skill.name}</span>
           </li>
