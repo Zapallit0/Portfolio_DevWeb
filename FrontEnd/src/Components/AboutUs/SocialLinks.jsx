@@ -1,6 +1,6 @@
 import React from 'react';
 import Linkedin  from '../../assets/Socials/linkedin.svg';
-import X from '../../assets/Socials/x.svg' 
+import X from '../../assets/Socials/X.svg' 
 import GitHub from '../../assets/Socials/github.svg'
 import Instagram from '../../assets/Socials/instagram.svg'
 

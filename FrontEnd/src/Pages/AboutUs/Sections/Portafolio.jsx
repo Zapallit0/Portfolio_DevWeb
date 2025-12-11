@@ -5,6 +5,7 @@ import Forever from '../../../assets/Proyects/ForeverLivingNoemi.png'
 import Game from '../../../assets/Proyects/THEBINDINGOFLUFFY.png'
 import Safety from '../../../assets/Proyects/SafetyAdvisors.png'
 import Lexor from '../../../assets/Proyects/LexorSmartContract.png'
+import BlackBird from '../../../assets/Proyects/BlackBird.png'
 
 
 import JavaScript from '../../../assets/Technologies/javascript.svg'
@@ -72,21 +73,26 @@ function Portfolio() {
       name: 'Black Bird',
       description: 'Dashboard para smart contracts',
       techStack: ['React','PostgreSQL','Node'],
-      image: Lexor,
+      image: BlackBird,
       link:"https://lexorsmartproject.netlify.app"
     },
   ];
 
   return (
     <div className='Portafolio'>
-      <h3>-- Trabajos y proyectos completados</h3>
-      {projects.map(project => (
-        <ProjectCard 
-          key={project.id} 
-          project={project} 
-          techLogos={techLogos} 
-        />
-      ))}
+      <div className='Title'>
+        <h2>PORTAFOLIO</h2>
+        <h3>-- Trabajos y proyectos completados</h3>
+      </div>
+      <div className='Projects'>
+          {projects.map(project => (
+            <ProjectCard 
+              key={project.id} 
+              project={project} 
+              techLogos={techLogos} 
+            />
+          ))}
+      </div>
     </div>
   );
 }
