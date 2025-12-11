@@ -10,7 +10,7 @@ import PostgreSQL from '../../../assets/Technologies/postgresql.svg';
 
 function TechStack() {
   const ref = React.useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 1 });
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const technologies = [
     { name: 'React.js', icon: `${ReactJS}` },
@@ -20,35 +20,40 @@ function TechStack() {
     { name: 'Git/Git', icon: `${Git}` }
   ];
 
-
+  // Variantes para los círculos - efecto pop de burbuja
   const circleVariants = {
     hidden: { 
       opacity: 0, 
-      scale: 0.5,
-      rotate: -180
+      scale: 0
     },
-    visible: { 
+    visible: (delay) => ({ 
       opacity: 1, 
-      scale: 1,
-      rotate: 0,
+      scale: [0, 1.2, 1],
       transition: {
-        duration: 0.6,
-        ease: "easeOut"
+        type: "spring",
+        duration: 0.8,
+        bounce: 0.6,
+        damping: 8,
+        delay: delay
       }
-    }
+    })
   };
 
+  // Variante para el TechList - aparece al final
   const techListVariants = {
     hidden: { 
       opacity: 0, 
-      y: 20 
+      scale: 0
     },
     visible: { 
       opacity: 1, 
-      y: 0,
+      scale: [0, 1.1, 1],
       transition: {
-        duration: 1.2,
-        ease: "easeOut"
+        type: "spring",
+        duration: 0.8,
+        bounce: 0.4,
+        damping: 10,
+        delay: 4.5
       }
     }
   };
@@ -73,7 +78,7 @@ function TechStack() {
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ delay: 0.6 }}
+          custom={1.0}
         />
         
         {/* Círculo mediano izquierdo */}
@@ -85,7 +90,7 @@ function TechStack() {
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ delay: 0.8 }}
+          custom={2.0}
         />
         
         {/* Círculo grande izquierdo */}
@@ -97,7 +102,7 @@ function TechStack() {
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ delay: 1 }}
+          custom={3.0}
         />
         
         {/* TechList - aparece después de los círculos */}
@@ -105,7 +110,6 @@ function TechStack() {
           variants={techListVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ delay: 1.3 }}
         >
           <TechList technologies={technologies} />
         </motion.div>
@@ -119,7 +123,7 @@ function TechStack() {
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ delay: 1 }}
+          custom={3.0}
         />
         
         {/* Círculo mediano derecho */}
@@ -131,7 +135,7 @@ function TechStack() {
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ delay: 0.8 }}
+          custom={2.0}
         />
         
         {/* Círculo pequeño derecho */}
@@ -143,7 +147,7 @@ function TechStack() {
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ delay: 0.6 }}
+          custom={1.0}
         />
       </div>
     </div>
