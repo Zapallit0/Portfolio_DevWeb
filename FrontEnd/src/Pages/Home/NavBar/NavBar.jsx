@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './NavBar.css'
 import { Squash as Hamburger } from 'hamburger-react'
 import Circle from '../../../assets/Forms/Circle.svg'
-import Logo from '../../../assets/Logo/5.svg'
+import Logo from '../../../assets/Logo/JhersDev/Logo_White.svg'
 
 function NavBar() {
   const [showMenu, setShowMenu] = useState(false)
@@ -14,8 +14,8 @@ function NavBar() {
 
   return (
     <nav className='navBar'>
-      <Link to="/">
-        <img src={Logo} alt="JVQ" height="40px"/>
+      <Link to="/" className='logo'>
+        <img src={Logo} alt="JVQ" height="60px"width="60px"/>
       </Link>
       
       <div className='phone'>
