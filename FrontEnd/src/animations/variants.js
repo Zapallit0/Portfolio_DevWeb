@@ -19,7 +19,7 @@ export const staggerContainer = {
 };
 
 export const staggerItem = {
-  hidden: { scale: 0.8, opacity: 0 },
+  hidden: { scale: 0.5, opacity: 0 },
   show: { scale: 1, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
@@ -68,7 +68,24 @@ export const softSkillsInner = {
   }
 };
 
-// Page transition variants
+export const circleVariants = {
+  hidden: { scale: 0, opacity: 0 },
+  visible: (delay) => ({
+    scale: 1,
+    opacity: 1,
+    transition: { duration: 0.3, ease: "easeOut", delay }
+  })
+};
+
+export const techListVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: "easeOut", delay: 2.0 }
+  }
+};
+
 export const pageVariants = {
   initial: { opacity: 0, scale: 0.9 },
   animate: {
@@ -83,7 +100,6 @@ export const pageVariants = {
   }
 };
 
-// Door transition variants
 export const doorVariants = {
   initial: {
     clipPath: "polygon(0 0, 50% 0, 50% 100%, 0 100%)",
