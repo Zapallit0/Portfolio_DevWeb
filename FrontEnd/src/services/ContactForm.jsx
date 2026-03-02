@@ -1,8 +1,8 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import './ContactForm.css'
 import emailjs from '@emailjs/browser'
 import { Service_ID,Template_ID, Public_Key } from '../../config.js'
-import { ToastContainer,toast, Bounce} from 'react-toastify'
+import { toast } from 'react-toastify'
 
 function ContactForm() {
     const form=useRef()
@@ -55,20 +55,6 @@ function ContactForm() {
             <input type="email" placeholder='Correo' name='email' />
             <textarea type="text" placeholder='¿Cual es tu idea? Coméntanos' className='Mensaje' name='message' rows='5' />
             <button type='submit' value="Send">Enviar</button>
-            <ToastContainer
-            position="top-right"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick={false}
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="light"
-            closeButton={false}
-            transition={Bounce}
-            />
     </form>
   )
 }

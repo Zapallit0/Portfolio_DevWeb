@@ -1,9 +1,8 @@
-import React from 'react'
 import './Contact.css'
-import { Phone,Mail} from 'lucide-react'
-import Linkedin from '../../../assets/Socials/linkedin.svg'
-import X from '../../../assets/Socials/X.svg'
+import { Phone, Mail } from 'lucide-react'
 import ContactForm from '../../../services/ContactForm'
+import { contactLinks } from '../../../data/contactLinks'
+
 function Contact() {
   return (
     <section className='contactPage'>
@@ -12,7 +11,7 @@ function Contact() {
             ¿Te gustó lo que ofrecemos?
             <br />
             <br />
-            Escríbenos: 
+            Escríbenos:
         </h3>
         <ContactForm/>
         </div>
@@ -20,34 +19,17 @@ function Contact() {
             <ul>
                 <h4>Contacto: </h4>
                 <p>Estamos disponibles para tus consultas, sugerencias usando los siguientes canales de comunicación:</p>
-                <li>
+                {contactLinks.map((link) => (
+                  <li key={link.type}>
                     <div>
-                        <Phone/>
+                      {link.icon === 'Phone' ? <Phone /> :
+                       link.icon === 'Mail' ? <Mail /> :
+                       <img src={link.icon} alt={link.label} height='30px' width='30px'/>}
                     </div>
-                    <h5>Teléfono: </h5>
-                    <a href='tel:+51 936427966'>+51 936427966</a>
-                </li>
-                <li>
-                    <div>
-                        <Mail/>
-                    </div>
-                    <h5>Correo: </h5>
-                    <a href='mailto:contacto@jhersvin.com'>contacto@jhersvin.com</a>
-                </li>
-                <li>
-                    <div>
-                        <img src={Linkedin} alt="Linkedin"height='30px' width='30px'/>
-                    </div>
-                    <h5>LinkedIn: </h5>
-                    <a href='https://www.linkedin.com/in/jhersvin-villodas-quinto-98669b233/'>Digital Rescue</a>
-                </li>
-                <li>
-                    <div>
-                        <img src={X} alt="X" height='30px' width='30px'/>
-                    </div>
-                    <h5>X/Twitter</h5>
-                    <a href='https://x.com/Zapallito4u'>DRescue</a>
-                </li>
+                    <h5>{link.label}: </h5>
+                    <a href={link.href}>{link.text}</a>
+                  </li>
+                ))}
             </ul>
         </div>
     </section>

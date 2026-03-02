@@ -1,62 +1,29 @@
-import React from 'react'
 import './Services.css'
-
-import WebSimple from '../../../assets/ServicesImgs/WebBasica.png'
-import WebAmplia from '../../../assets/ServicesImgs/WebAmplia.png'
-import WebService from '../../../assets/ServicesImgs/WebService.jpg'
-
 import Check from '../../../assets/Icons_Main/Check.svg'
-
 import { motion } from 'framer-motion'
+import { ServiciosInfo } from '../../../data/services'
+import { staggerContainer, staggerItem } from '../../../animations/variants'
+
 function Services() {
-
-    const ServiciosInfo=[
-        {
-            "Image":WebSimple,
-            "Title":"Desarrollo WEB",
-            "Description":"Creamos páginas web personalizadas, desde diseños estáticos con información clara y atractiva, hasta portales interactivos que ofrecen servicios, conectan con tus usuarios y fomentan una experiencia única."
-        },
-        {
-            "Image":WebAmplia,
-            "Title":"Sistema Web para Negocios",
-            "Description":"Creamos soluciones personalizadas que se adaptan a las necesidades específicas de tu empresa, como tiendas en línea para impulsar tus ventas, sistemas de reservas eficientes y paneles administrativos intuitivos para gestionar tu negocio de manera efectiva."
-        },{
-            "Image":WebService,
-            "Title":"Sistemas ERP",
-            "Description":"Creamos soluciones personalizadas que gestionan y automatizan los procesos internos de tu negocio, incluyendo inventario, recursos humanos, finanzas y logística, para que puedas operar de forma más eficiente y organizada."
-        }
-    ]
-
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        show: { 
-          opacity: 1,
-          transition: { staggerChildren: 0.3 }
-        }
-      };
-      const itemVariants = {
-        hidden: { scale: 0.8, opacity: 0 },
-        show: { scale: 1, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } }
-      };
   return (
     <section className='Services'>
         <div className='servicesTitle'>
             <h3>OPCIONES DE DESARROLLO</h3>
             <span>Ya sea que quieras iniciar, reconstruir o para continuar proyectos.</span>
         </div>
-        <motion.div  
+        <motion.div
         className='servicesList'
-        variants={containerVariants}
+        variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.5 }}
         >
             { ServiciosInfo.map((servicio,index)=>(
-            <motion.div className='serviceItem' key={index} variants={itemVariants}>
+            <motion.div className='serviceItem' key={index} variants={staggerItem}>
                  <img src={servicio.Image} alt="Service" width='300px' height='220px' />
              <h4>{servicio.Title}</h4>
              <p>{servicio.Description}</p>
-            </motion.div>   
+            </motion.div>
             ))
             }
         </motion.div >

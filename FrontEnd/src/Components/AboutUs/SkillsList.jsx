@@ -1,15 +1,3 @@
-// SkillsList.jsx
-import React from 'react';
-import { 
-  CheckCircle, 
-  MessageCircle, 
-  Zap, 
-  Shield, 
-  Briefcase, 
-  Users,
-  Star // Icono por defecto
-} from 'lucide-react';
-
 function SkillsList({ skills }) {
   return (
     <ul className='SkillsList'>

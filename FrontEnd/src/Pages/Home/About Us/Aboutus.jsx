@@ -1,13 +1,13 @@
-import React from 'react'
 import './Aboutus.css'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+import { ROUTES } from '../../../constants/routes'
 
 function Aboutus() {
   const navigate = useNavigate();
-  
+
   const handleNavigateToNosotros = () => {
-    navigate('/nosotros');
+    navigate(ROUTES.ABOUT);
   };
 
   return (
@@ -20,7 +20,7 @@ function Aboutus() {
         <motion.p
         initial={{ opacity: 0}}
         animate={{ opacity: 1,transition: { duration: 0.5, ease: "easeIn"}}}
-        >Desde que conocimos el mundo del desarrollo web, nos hemos apasionado por crear páginas con diseños únicos. <br /> 
+        >Desde que conocimos el mundo del desarrollo web, nos hemos apasionado por crear páginas con diseños únicos. <br />
         Nuestro objetivo principal es garantizar la mejor experiencia posible para los usuarios y superar las expectativas de nuestros clientes.</motion.p>
         <motion.button
         initial={{ scale: 1}}
