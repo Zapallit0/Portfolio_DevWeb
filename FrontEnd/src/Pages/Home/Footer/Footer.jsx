@@ -7,7 +7,7 @@ import { ROUTES } from '../../../constants/routes'
 function Footer() {
   return (
     <footer>
-        <a href="www.jhersvin.com"><img src={Logo} alt="Logo D" height="50px"/></a>
+        <a href="www.jhersvin.com"><img src={Logo} alt="Logo D" height="100px" width="100px"/></a>
         <ul>
             <li><Link to={ROUTES.HOME}>Home</Link></li>
             <li><Link to={ROUTES.SERVICES}>Servicios</Link></li>
