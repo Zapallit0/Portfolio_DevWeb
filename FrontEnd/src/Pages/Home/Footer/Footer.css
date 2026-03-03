@@ -1,31 +1,80 @@
-footer{
-    display: flex;
-    width:100%;
-    min-height:10vh ;
-    justify-content: center;
-    align-items: center;
-    background-color:var(--blueRibon900) ;
-    color: #FFFFFF;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1.5rem 0;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--blueRibon900);
+  color: #ffffff;
+  padding: 2.5rem 1rem 1.5rem;
+  gap: 1.25rem;
 }
-footer > a img{
-    filter: brightness(0) invert(1);
+
+/* Logo */
+.footer__logo img {
+  filter: brightness(0) invert(1);
+  transition: opacity 0.3s;
 }
-footer ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+.footer__logo:hover img {
+  opacity: 0.8;
 }
-footer ul a{
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 1rem;
+
+/* Navigation */
+.footer__nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
-@media screen and (min-width:720px){
-    footer ul{
-        gap:3rem ;
-    }
+.footer__nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+.footer__nav a:hover {
+  color: var(--blueRibon200);
+}
+
+/* Divider */
+.footer__divider {
+  width: 60%;
+  max-width: 500px;
+  border: none;
+  border-top: 1px solid var(--blueRibon700);
+}
+
+/* Social icons */
+.footer__socials {
+  display: flex;
+  gap: 1.25rem;
+}
+.footer__socials a {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--blueRibon700);
+  transition: transform 0.3s, color 0.3s, border-color 0.3s;
+}
+.footer__socials a:hover {
+  color: var(--blueRibon200);
+  border-color: var(--blueRibon200);
+  transform: scale(1.15);
+}
+
+/* Copyright */
+.footer__copy {
+  font-size: 0.8rem;
+  color: var(--blueRibon300);
+  text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+  .footer__nav {
+    gap: 3rem;
+  }
 }
