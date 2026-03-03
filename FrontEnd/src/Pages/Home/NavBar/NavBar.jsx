@@ -38,10 +38,10 @@ function NavBar() {
           <li><Link to={ROUTES.SERVICES}>Servicios</Link></li>
           <li><Link to={ROUTES.ABOUT}>Nosotros</Link></li>
         </ul>
-        <button className='ctabutton'>
-          <Link to={ROUTES.CONTACT}>Contáctanos</Link>
-        </button>
       </div>
+      <button className='ctabutton'>
+        <Link to={ROUTES.CONTACT}>Contáctanos</Link>
+      </button>
     </nav>
   )
 }
