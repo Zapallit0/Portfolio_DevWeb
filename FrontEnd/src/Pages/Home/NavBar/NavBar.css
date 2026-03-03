@@ -14,7 +14,6 @@
     min-height: 5vh;
     align-items: center;
     justify-content: space-between;
-    overflow-y: hidden;
 }
 .navBar .logo{
     width: 20%;
@@ -24,6 +23,9 @@
     color:white;
     font-weight: 600;
 }
+.navBar > a img{
+    filter: brightness(0) invert(1);
+}
 .navHamb{
     width: 1rem;
 }
@@ -32,44 +34,87 @@
     font-size: 1.5rem;
     font-weight:700;
 }
-.navPhone{
-    width: 40%;
-    text-align: right;
-    list-style: none;
-    position: absolute;
-    right: 0;
-    top: 7vh;
-    background-color: var(--blueRibon900);
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    padding-right: 1.5rem;
-    gap: 1rem;
-    color: var(--blueRibon50);
-    text-decoration: underline;
-    font-weight: 700;
-    font-size: 1.2rem;
-}
-.navPhone button{
-    padding: 0.5rem 0rem;
-    border-radius: 15px;
-    background-color: transparent;
-    color: var(--blueRibon50);
-    font-weight: 700;
-    font-size: 1.2rem;
-    border: 3px var(--blueRibon300) solid;
-    text-decoration: none;
-}
+
+/* Mobile dropdown */
 .phone{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
+.navPhone-backdrop{
+    position: fixed;
+    inset: 0;
+    z-index: 998;
+}
+.navPhone{
+    list-style: none;
+    position: absolute;
+    right: -1rem;
+    top: 100%;
+    width: 65vw;
+    max-width: 280px;
+    background-color: var(--blueRibon900);
+    border-left: 2px solid var(--blueRibon700);
+    border-bottom: 2px solid var(--blueRibon700);
+    border-radius: 0 0 0 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem 0;
+    gap: 0;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.navPhone--open{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.navPhone li{
+    padding: 0;
+}
+.navPhone li a{
+    display: block;
+    padding: 0.7rem 1.5rem;
+    color: var(--blueRibon50);
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: background-color 0.2s ease, padding-left 0.2s ease;
+}
+.navPhone li:not(:last-child) a:hover{
+    background-color: var(--blueRibon800);
+    padding-left: 2rem;
+}
+.navPhone li:last-child{
+    padding: 0.5rem 1.5rem 0.3rem;
+}
+.navPhone button{
+    width: 100%;
+    padding: 0.55rem 1rem;
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--blueRibon50);
+    font-weight: 700;
+    font-size: 1.05rem;
+    border: 2px var(--blueRibon300) solid;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.navPhone button:hover{
+    background-color: var(--blueRibon800);
+    border-color: var(--blueRibon200);
+}
+
 .comp{
     display: none;
 }
 .navBar > .ctabutton{
     display: none;
 }
+
+/* Desktop */
 @media screen and (min-width: 900px){
     .navBar{
         justify-content: space-around;
