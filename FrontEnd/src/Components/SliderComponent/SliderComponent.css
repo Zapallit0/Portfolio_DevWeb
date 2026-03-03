@@ -1,4 +1,6 @@
 .slider{
+    --width: 280px;
+    --height: 140px;
     width: 100%;
     height: var(--height);
     overflow: hidden;
@@ -53,4 +55,16 @@
         left: 100%;
     }
   }
-  
+
+  @media screen and (min-width: 720px){
+    .slider{
+      --width: 400px;
+      --height: 200px;
+    }
+  }
+  @media screen and (min-width: 1080px){
+    .slider{
+      --width: 500px;
+      --height: 250px;
+    }
+  }

@@ -10,11 +10,7 @@ function SliderComponent({images,reverse=false}) {
         <div 
     className="slider" 
     reverse={reverse.toString()}
-    style={{ 
-        '--width': '500px',
-        '--height': '250px',
-        '--quantity': 5
-    }}
+    style={{ '--quantity': 5 }}
     >
           <div className="list">
             {images.map((page,index)=>(
