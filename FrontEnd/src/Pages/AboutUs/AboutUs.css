@@ -461,9 +461,9 @@
 @media (max-width: 768px) {
   .HeroAboutUs {
     flex-direction: column;
-    min-height: 90vh;
+    min-height: 100vh;
     gap: 1.5rem;
-    padding: 1.5rem;
+    padding: 4rem 1.5rem 1.5rem;
   }
   .HeroAboutUs .Profile {
     height: 16rem;
@@ -574,8 +574,8 @@
 /* Small mobile */
 @media (max-width: 480px) {
   .HeroAboutUs {
-    min-height: 80vh;
-    padding: 1rem;
+    min-height: 100vh;
+    padding: 4rem 1rem 1rem;
   }
   .HeroAboutUs .Profile {
     height: 13rem;
