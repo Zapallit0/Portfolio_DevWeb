@@ -3,7 +3,7 @@ import { ExternalLink } from 'lucide-react';
 function ProjectCard({ project, techLogos }) {
   return (
     <div className='ProyectCard'>
-      <img src={project.image} alt={project.name} width={'400px'} height={'210px'} />
+      <img src={project.image} alt={project.name} />
       <div className='ProyectData'>
         <div className='Details'>
           <span>&gt; {project.name}</span>

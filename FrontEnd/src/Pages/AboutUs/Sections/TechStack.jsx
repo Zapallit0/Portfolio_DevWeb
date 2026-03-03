@@ -20,39 +20,36 @@ function TechStack() {
       </motion.h4>
       
       <div className='TechList'>
-        <motion.img 
-          src={Circle} 
-          alt="Tech decoration" 
-          width={'40px'} 
-          height={'40px'}
+        <motion.img
+          src={Circle}
+          alt="Tech decoration"
+          className='techCircle techCircle--sm'
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           custom={0.5}
         />
-        
-        <motion.img 
-          src={Circle} 
-          alt="Tech decoration" 
-          width={'60px'} 
-          height={'60px'}
+
+        <motion.img
+          src={Circle}
+          alt="Tech decoration"
+          className='techCircle techCircle--md'
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           custom={1.0}
         />
-        
-        <motion.img 
-          src={Circle} 
-          alt="Tech decoration" 
-          width={'100px'} 
-          height={'100px'}
+
+        <motion.img
+          src={Circle}
+          alt="Tech decoration"
+          className='techCircle techCircle--lg'
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           custom={1.5}
         />
-        
+
         <motion.div
           variants={techListVariants}
           initial="hidden"
@@ -60,35 +57,31 @@ function TechStack() {
         >
           <TechList technologies={technologies} />
         </motion.div>
-        
-        {/* Círculo grande derecho */}
-        <motion.img 
-          src={Circle} 
-          alt="Tech decoration" 
-          width={'100px'} 
-          height={'100px'}
+
+        <motion.img
+          src={Circle}
+          alt="Tech decoration"
+          className='techCircle techCircle--lg'
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           custom={1.5}
         />
-        
-        <motion.img 
-          src={Circle} 
-          alt="Tech decoration" 
-          width={'60px'} 
-          height={'60px'}
+
+        <motion.img
+          src={Circle}
+          alt="Tech decoration"
+          className='techCircle techCircle--md'
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           custom={1.0}
         />
-        
-        <motion.img 
-          src={Circle} 
-          alt="Tech decoration" 
-          width={'40px'} 
-          height={'40px'}
+
+        <motion.img
+          src={Circle}
+          alt="Tech decoration"
+          className='techCircle techCircle--sm'
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
