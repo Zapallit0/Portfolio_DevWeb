@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
+import ScrollToTop from './Components/ScrollToTop'
 import MainLayout from './layouts/MainLayout'
 import DoorTransition from './Components/DoorTransition/DoorTransition'
 import HomePage from './Pages/Home/HomePage.jsx'
@@ -11,6 +12,8 @@ import { ROUTES } from './constants/routes'
 
 function App() {
   return (
+    <>
+    <ScrollToTop />
     <DoorTransition>
       <Routes>
         <Route element={<MainLayout />}>
@@ -22,6 +25,7 @@ function App() {
         </Route>
       </Routes>
     </DoorTransition>
+    </>
   )
 }
 
