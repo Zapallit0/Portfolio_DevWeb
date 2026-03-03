@@ -7,4 +7,15 @@ export default defineConfig({
   plugins: [react(),
      tailwindcss(),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'framer-motion': ['framer-motion'],
+          'router': ['react-router-dom'],
+          'vendor': ['lucide-react', 'react-lazy-load-image-component', '@emailjs/browser'],
+        }
+      }
+    }
+  }
 })

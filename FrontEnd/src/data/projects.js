@@ -1,8 +1,8 @@
-import Portafolio from '../assets/Proyects/FIRSTPORTAFOLIO.png'
-import Forever from '../assets/Proyects/ForeverLivingNoemi.png'
-import Game from '../assets/Proyects/THEBINDINGOFLUFFY.png'
-import Safety from '../assets/Proyects/SafetyAdvisors.png'
-import Lexor from '../assets/Proyects/LexorSmartContract.png'
+import Portafolio from '../assets/Proyects/FIRSTPORTAFOLIO.webp'
+import Forever from '../assets/Proyects/ForeverLivingNoemi.webp'
+import Game from '../assets/Proyects/THEBINDINGOFLUFFY.webp'
+import Safety from '../assets/Proyects/SafetyAdvisors.webp'
+import Lexor from '../assets/Proyects/LexorSmartContract.webp'
 
 import JavaScript from '../assets/Technologies/javascript.svg'
 import ReactJS from '../assets/Technologies/react.svg'
