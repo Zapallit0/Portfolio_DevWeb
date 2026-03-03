@@ -1,0 +1,408 @@
+/* ===== CONTACT PAGE ===== */
+.ContactPage {
+  background-color: #101720;
+  color: #FFFFFF;
+}
+
+/* ===== HERO SECTION ===== */
+.heroContact {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem 3rem;
+  gap: 1.5rem;
+  background-color: #101720;
+}
+
+.heroContact-label {
+  color: var(--blueRibon200);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.heroContact h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  width: 80%;
+}
+
+.heroContact-accent {
+  text-decoration: underline;
+}
+
+.heroContact p {
+  width: 80%;
+  font-size: 0.95rem;
+  color: var(--blueRibon200);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.heroContact-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.heroContact-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--blueRibon200);
+}
+
+.heroContact-icon svg {
+  background-color: var(--blueRibon900);
+  padding: 0.8rem;
+  border-radius: 12px;
+  width: 55px;
+  height: 55px;
+  box-sizing: content-box;
+}
+
+.heroContact-icon span {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* ===== FORM SECTION ===== */
+.contactFormSection {
+  background-color: #101956;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.contactFormSection-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.contactFormSection-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+}
+
+.contactFormSection-header h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--blueRibon200);
+}
+
+.contactFormSection-header p {
+  font-size: 0.95rem;
+  color: var(--blueRibon100);
+  line-height: 1.6;
+  width: 100%;
+}
+
+/* Form overrides for this page */
+.contactFormSection .emailContact {
+  width: 80%;
+}
+
+.contactFormSection .emailContact input,
+.contactFormSection .emailContact textarea {
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  border-bottom: 1px solid var(--blueRibon300);
+  padding: 0.5rem 0;
+}
+
+.contactFormSection .emailContact input::placeholder,
+.contactFormSection .emailContact textarea::placeholder {
+  color: var(--blueRibon300);
+}
+
+.contactFormSection .emailContact button {
+  width: fit-content;
+  padding: 0.8rem 2.5rem;
+  text-transform: uppercase;
+  background-color: var(--blueRibon600);
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.contactFormSection .emailContact button:hover {
+  background-color: var(--blueRibon800);
+}
+
+/* ===== CONTACT LINKS ===== */
+.contactLinksSection {
+  background-color: #0B1215;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.contactLinksSection-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contactLinksSection-wrapper h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--blueRibon200);
+  width: auto;
+}
+
+.contactLinksSection-desc {
+  font-size: 0.95rem;
+  color: var(--blueRibon100);
+  line-height: 1.6;
+  width: auto;
+}
+
+.contactLinksSection-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.contactLinksSection-list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contactLinksSection-iconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blueRibon900);
+  border-radius: 12px;
+  min-width: 45px;
+  height: 45px;
+  color: var(--blueRibon200);
+}
+
+.contactLinksSection-iconBox img {
+  filter: invert(78%) sepia(25%) saturate(767%) hue-rotate(193deg) brightness(94%) contrast(131%);
+}
+
+.contactLinksSection-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.contactLinksSection-info h5 {
+  font-size: 0.85rem;
+  color: var(--blueRibon300);
+  font-weight: 600;
+}
+
+.contactLinksSection-info a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.contactLinksSection-info a:hover {
+  color: var(--blueRibon200);
+}
+
+/* ===== RESPONSIVE 720px ===== */
+@media screen and (min-width: 720px) {
+  .heroContact {
+    padding: 8rem 2rem 4rem;
+    gap: 2rem;
+  }
+
+  .heroContact-label {
+    font-size: 1.1rem;
+  }
+
+  .heroContact h1 {
+    font-size: 3rem;
+  }
+
+  .heroContact p {
+    font-size: 1.15rem;
+    width: 70%;
+  }
+
+  .heroContact-icon svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .heroContact-icon span {
+    font-size: 0.95rem;
+  }
+
+  .contactFormSection {
+    padding: 5rem 2rem;
+  }
+
+  .contactFormSection-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .contactFormSection-header p {
+    font-size: 1.1rem;
+  }
+
+  .contactFormSection .emailContact input,
+  .contactFormSection .emailContact textarea {
+    font-size: 1.2rem;
+  }
+
+  .contactFormSection .emailContact button {
+    font-size: 1.1rem;
+    padding: 1rem 3rem;
+  }
+
+  .contactLinksSection {
+    padding: 5rem 2rem;
+  }
+
+  .contactLinksSection-wrapper h3 {
+    font-size: 2rem;
+  }
+
+  .contactLinksSection-desc {
+    font-size: 1.1rem;
+  }
+
+  .contactLinksSection-iconBox {
+    min-width: 50px;
+    height: 50px;
+  }
+
+  .contactLinksSection-info a {
+    font-size: 1.1rem;
+  }
+
+  .contactLinksSection-info h5 {
+    font-size: 0.95rem;
+  }
+}
+
+/* ===== RESPONSIVE 1080px ===== */
+@media screen and (min-width: 1080px) {
+  .heroContact {
+    min-height: 80vh;
+    padding: 10rem 2rem 5rem;
+  }
+
+  .heroContact h1 {
+    font-size: 4rem;
+    width: 60%;
+  }
+
+  .heroContact p {
+    font-size: 1.3rem;
+    width: 50%;
+  }
+
+  .heroContact-icons {
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+
+  .heroContact-icon svg {
+    width: 65px;
+    height: 65px;
+    padding: 1rem;
+  }
+
+  .heroContact-icon span {
+    font-size: 1rem;
+  }
+
+  .contactFormSection {
+    padding: 6rem 2rem;
+  }
+
+  .contactFormSection-wrapper {
+    width: 60%;
+    gap: 3rem;
+  }
+
+  .contactFormSection-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .contactFormSection-header p {
+    font-size: 1.2rem;
+  }
+
+  .contactFormSection .emailContact {
+    width: 100%;
+  }
+
+  .contactFormSection .emailContact input,
+  .contactFormSection .emailContact textarea {
+    font-size: 1.3rem;
+  }
+
+  .contactLinksSection {
+    padding: 5rem 2rem;
+  }
+
+  .contactLinksSection-wrapper {
+    width: 60%;
+  }
+
+  .contactLinksSection-wrapper h3 {
+    font-size: 2.2rem;
+  }
+
+  .contactLinksSection-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .contactLinksSection-list li {
+    width: calc(50% - 1rem);
+  }
+
+  .contactLinksSection-info a {
+    font-size: 1.15rem;
+  }
+}
+
+/* ===== RESPONSIVE 1200px ===== */
+@media screen and (min-width: 1200px) {
+  .heroContact h1 {
+    font-size: 4.5rem;
+  }
+
+  .contactFormSection-wrapper {
+    width: 50%;
+  }
+
+  .contactLinksSection-wrapper {
+    width: 50%;
+  }
+}
