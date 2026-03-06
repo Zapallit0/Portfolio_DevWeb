@@ -201,6 +201,7 @@
 .ProyectCard a{
     align-self: center;
     text-decoration: none;
+    margin-bottom: 1rem;
 }
 
 .ProyectCard button{
@@ -688,7 +689,6 @@
   }
   .ProyectCard {
     width: 380px;
-    height: 300px;
   }
 }
 
@@ -790,6 +790,9 @@
     width: 100%;
     border-radius: 25px;
   }
+  .ProyectCard a {
+    margin-bottom: 0.8rem;
+  }
   .ProyectCard img {
     height: 160px;
   }
@@ -863,6 +866,9 @@
   }
   .ProyectCard {
     border-radius: 20px;
+  }
+  .ProyectCard a {
+    margin-bottom: 0.8rem;
   }
   .ProyectCard img {
     height: 130px;
