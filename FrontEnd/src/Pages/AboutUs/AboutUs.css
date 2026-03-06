@@ -21,13 +21,24 @@
     align-items: center;
     height: 35rem;
     width:35rem;
+    position: relative;
+}
+.HeroAboutUs .Profile::before {
+    content: '';
+    position: absolute;
+    inset: 0;
     background-image: url('../../assets/Perfil/BackgroundPerfil.svg');
-    background-size:contain;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    transition: transform 0.6s ease;
+}
+.HeroAboutUs .Profile:hover::before {
+    transform: rotate(-15deg) scale(1.1);
 }
 .HeroAboutUs .Profile img{
-    transform: translateY(-10px); 
+    position: relative;
+    transform: translateY(-10px);
 }
 .HeroAboutUs .Content {
     display: flex;
@@ -156,6 +167,10 @@
 }
 .Languages li img{
     filter: brightness(0) saturate(100%) invert(18%) sepia(32%) saturate(4243%) hue-rotate(217deg) brightness(96%) contrast(110%);
+    transition: transform 0.5s ease;
+}
+.Languages li img:hover{
+    transform: rotate(10deg);
 }
 
 /* Portafolio */
@@ -182,7 +197,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  width: 60%;
+  width: 80%;
 }
 
 .ProyectCard{
