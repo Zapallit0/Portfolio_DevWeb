@@ -1,8 +1,14 @@
 import { ExternalLink } from 'lucide-react';
 
-function ProjectCard({ project, techLogos }) {
+function ProjectCard({ project, techLogos, onSelect }) {
   return (
-    <div className='ProyectCard'>
+    <div
+      className='ProyectCard'
+      onClick={() => onSelect(project)}
+      style={{ cursor: 'pointer', transition: 'transform 0.2s ease' }}
+      onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.03)'}
+      onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+    >
       <img src={project.image} alt={project.name} />
       <div className='ProyectData'>
         <div className='Details'>
@@ -14,8 +20,8 @@ function ProjectCard({ project, techLogos }) {
           <ul>
             {project.techStack.map(tech => (
               <li key={tech}>
-                <img 
-                  src={techLogos[tech]} 
+                <img
+                  src={techLogos[tech]}
                   alt={`${tech} icon`}
                   height={"25px"}
                 />
@@ -25,12 +31,17 @@ function ProjectCard({ project, techLogos }) {
           </ul>
         </div>
       </div>
-      <a href={project.link} target="_blank" rel="noopener noreferrer">
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={(e) => e.stopPropagation()}
+      >
         <button>
           <ExternalLink size={16} />
           Link
         </button>
-      </a> 
+      </a>
     </div>
   );
 }

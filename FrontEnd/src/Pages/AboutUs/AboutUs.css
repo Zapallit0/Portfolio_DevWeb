@@ -249,6 +249,7 @@
 .ProyectData .Details ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -272,7 +273,233 @@
 }
 
 
-/* Skills */
+
+/* ProjectDetail Overlay */
+.ProjectDetail-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.ProjectDetail-container {
+  background: #101720;
+  border: 1px solid rgba(187, 216, 255, 0.2);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 2.5rem;
+}
+
+.ProjectDetail-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #BBD8FF;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+  z-index: 10;
+}
+
+.ProjectDetail-close:hover {
+  background: rgba(187, 216, 255, 0.15);
+}
+
+.ProjectDetail-content {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.ProjectDetail-gallery {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ProjectDetail-mainImage {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(187, 216, 255, 0.15);
+}
+
+.ProjectDetail-mainImage img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.ProjectDetail-thumbnails {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+}
+
+.ProjectDetail-thumb {
+  flex-shrink: 0;
+  width: 60px;
+  height: 45px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+}
+
+.ProjectDetail-thumb.active,
+.ProjectDetail-thumb:hover {
+  border-color: #BBD8FF;
+  opacity: 1;
+}
+
+.ProjectDetail-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ProjectDetail-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+.ProjectDetail-info h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: white;
+}
+
+.ProjectDetail-description {
+  color: #BBD8FF;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ProjectDetail-tech span {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: white;
+}
+
+.ProjectDetail-tech ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.ProjectDetail-tech li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #BBD8FF;
+}
+
+.ProjectDetail-tech li img {
+  height: 25px;
+  width: 25px;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(78%) sepia(32%) saturate(385%) hue-rotate(185deg) brightness(101%) contrast(101%);
+}
+
+.ProjectDetail-tech li p {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.ProjectDetail-info a {
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.ProjectDetail-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  background-color: #142DE1;
+  border: none;
+  color: white;
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ProjectDetail-link:hover {
+  background: linear-gradient(45deg, #142DE1, #1A37F5);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(20, 45, 225, 0.25);
+}
+
+@media (max-width: 768px) {
+  .ProjectDetail-overlay {
+    padding: 1rem;
+  }
+
+  .ProjectDetail-container {
+    padding: 1.5rem;
+    max-height: 95vh;
+  }
+
+  .ProjectDetail-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .ProjectDetail-mainImage img {
+    height: 200px;
+  }
+
+  .ProjectDetail-info h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ProjectDetail-overlay {
+    padding: 0.5rem;
+  }
+
+  .ProjectDetail-container {
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .ProjectDetail-mainImage img {
+    height: 160px;
+  }
+
+  .ProjectDetail-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .ProjectDetail-description {
+    font-size: 0.9rem;
+  }
+}
+
 .SoftSkills {
           width: 100%;
           padding: 4rem 0;
@@ -419,7 +646,6 @@
           }
         }
 
-/* ===== RESPONSIVE: Hero, SocialLinks, TechStack, Portafolio ===== */
 
 /* Tablet */
 @media (max-width: 1080px) {
@@ -466,7 +692,7 @@
   }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
   .AboutUsPage {
     gap: 2rem;
@@ -588,7 +814,7 @@
   }
 }
 
-/* Small mobile */
+
 @media (max-width: 480px) {
   .HeroAboutUs {
     min-height: 100vh;
@@ -648,7 +874,7 @@
   }
 }
 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
   .SkillsList {
     gap: 2rem;

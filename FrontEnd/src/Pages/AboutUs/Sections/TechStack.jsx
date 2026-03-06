@@ -27,7 +27,7 @@ function TechStack() {
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          custom={0.5}
+          custom={0.2}
         />
 
         <motion.img
@@ -37,7 +37,7 @@ function TechStack() {
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          custom={1.0}
+          custom={0.7}
         />
 
         <motion.img
@@ -47,7 +47,7 @@ function TechStack() {
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          custom={1.5}
+          custom={1.0}
         />
 
         <motion.div
@@ -65,7 +65,7 @@ function TechStack() {
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          custom={1.5}
+          custom={1.0}
         />
 
         <motion.img
@@ -75,7 +75,7 @@ function TechStack() {
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          custom={1.0}
+          custom={0.7}
         />
 
         <motion.img
@@ -85,7 +85,7 @@ function TechStack() {
           variants={circleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          custom={0.5}
+          custom={0.2}
         />
       </div>
     </div>
