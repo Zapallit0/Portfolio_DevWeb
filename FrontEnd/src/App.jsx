@@ -7,7 +7,6 @@ import DoorTransition from './Components/DoorTransition/DoorTransition'
 import { ROUTES } from './constants/routes'
 
 const HomePage = lazy(() => import('./Pages/Home/HomePage.jsx'))
-const AboutPage = lazy(() => import('./Pages/AboutUs/AboutUs.jsx'))
 const ServicesPage = lazy(() => import('./Pages/Services/ServicesPage.jsx'))
 const ContactPage = lazy(() => import('./Pages/Contact/ContactPage.jsx'))
 const OnDevelopment = lazy(() => import('./Components/onDevelopment/OnDevelopment.jsx'))
@@ -21,7 +20,6 @@ function App() {
         <Routes>
           <Route element={<MainLayout />}>
             <Route path={ROUTES.HOME} element={<HomePage />} />
-            <Route path={ROUTES.ABOUT} element={<AboutPage />} />
             <Route path={ROUTES.SERVICES} element={<ServicesPage />} />
             <Route path={ROUTES.CONTACT} element={<ContactPage />} />
             <Route path="*" element={<OnDevelopment />} />

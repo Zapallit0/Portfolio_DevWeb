@@ -25,7 +25,6 @@ function NavBar() {
         <ul className={`navPhone ${showMenu ? 'navPhone--open' : ''}`}>
           <li><Link to={ROUTES.HOME} onClick={handleMenuClick}>Home</Link></li>
           <li><Link to={ROUTES.SERVICES} onClick={handleMenuClick}>Servicios</Link></li>
-          <li><Link to={ROUTES.ABOUT} onClick={handleMenuClick}>Nosotros</Link></li>
           <li>
             <Link to={ROUTES.CONTACT} onClick={handleMenuClick}>
               <button>Contáctanos</button>
@@ -39,7 +38,6 @@ function NavBar() {
           <img src={Circle} alt="background" />
           <li><Link to={ROUTES.HOME}>Home</Link></li>
           <li><Link to={ROUTES.SERVICES}>Servicios</Link></li>
-          <li><Link to={ROUTES.ABOUT}>Nosotros</Link></li>
         </ul>
       </div>
       <button className='ctabutton'>

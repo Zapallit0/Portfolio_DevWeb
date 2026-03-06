@@ -15,7 +15,6 @@ function Footer() {
       <ul className="footer__nav">
         <li><Link to={ROUTES.HOME}>Home</Link></li>
         <li><Link to={ROUTES.SERVICES}>Servicios</Link></li>
-        <li><Link to={ROUTES.ABOUT}>Nosotros</Link></li>
         <li><a href={BrochureDR} target="_blank" rel="noopener noreferrer" download>Brochure</a></li>
       </ul>
 

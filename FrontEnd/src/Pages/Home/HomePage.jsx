@@ -1,17 +1,20 @@
 import React from 'react'
-import HeroSection from './HeroSection/HeroSection'
-import Aboutus from './About Us/Aboutus'
-import Services from './Services/Services'
+import HeroSection from '../AboutUs/Sections/HeroSection.jsx'
+import TechStackSection from '../AboutUs/Sections/TechStack.jsx'
+import PortfolioSection from '../AboutUs/Sections/Portafolio.jsx'
+import SoftSkillsSection from '../AboutUs/Sections/SoftSkills.jsx'
 import Contact from './Contact/Contact'
+import '../AboutUs/AboutUs.css'
 
 function HomePage() {
   return (
-    <>
+    <section className='AboutUsPage'>
       <HeroSection />
-      <Aboutus />
-      <Services />
+      <TechStackSection />
+      <PortfolioSection />
+      <SoftSkillsSection />
       <Contact />
-    </>
+    </section>
   )
 }
 
