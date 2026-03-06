@@ -622,25 +622,16 @@
             gap: 1rem;
             border-radius: 20px;
           }
-          
+
           .decorative-circle {
-            width: 100px;
-            height: 100px;
+            display: none;
           }
-          
-          .left-circle {
-            left: -100px;
-          }
-          
-          .right-circle {
-            right: -100px;
-          }
-          
+
           .SkillsList li .skill-icon {
             width: 80px;
             height: 80px;
           }
-          
+
           .SkillsList li .skill-icon img {
             width: 50px;
             height: 50px;
@@ -753,23 +744,23 @@
   }
   .Languages {
     border-radius: 25px;
-    padding: 0.8rem;
+    padding: 1rem;
     width: 90%;
   }
   .Languages ul {
     width: 100%;
     height: auto;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    padding: 0.5rem;
+    gap: 2rem;
+    padding: 0.8rem;
     box-sizing: border-box;
   }
   .Languages li img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
   .Languages li {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
   .Portafolio {
     gap: 1.5rem;
@@ -846,20 +837,21 @@
     gap: 1.5rem;
   }
   .TechStack h4 {
-    font-size: 22px;
+    font-size: 24px;
   }
   .Languages {
     width: 95%;
+    padding: 0.8rem;
   }
   .Languages ul {
-    gap: 1rem;
+    gap: 1.5rem;
   }
   .Languages li img {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
   }
   .Languages li {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
   }
   .Portafolio .Projects {
     width: 95%;

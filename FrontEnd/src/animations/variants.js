@@ -73,7 +73,7 @@ export const circleVariants = {
   visible: (delay) => ({
     scale: 1,
     opacity: 1,
-    transition: { duration: 0.3, ease: "easeOut", delay }
+    transition: { duration: 0.25, ease: "easeOut", delay: delay * 0.5 }
   })
 };
 
@@ -82,7 +82,7 @@ export const techListVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.8, ease: "easeOut", delay: 2.0 }
+    transition: { duration: 0.5, ease: "easeOut", delay: 0.8 }
   }
 };
 
