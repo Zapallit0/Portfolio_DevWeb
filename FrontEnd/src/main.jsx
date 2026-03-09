@@ -4,9 +4,11 @@ import App from './App.jsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { ToastContainer, Bounce } from 'react-toastify'
+import { HelmetProvider } from 'react-helmet-async'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <HelmetProvider>
     <BrowserRouter>
       <App />
       <ToastContainer
@@ -24,5 +26,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         transition={Bounce}
       />
     </BrowserRouter>
+    </HelmetProvider>
   </React.StrictMode>,
 )

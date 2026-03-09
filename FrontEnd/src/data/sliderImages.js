@@ -18,9 +18,9 @@ export const sliderGroup1 = [
 ];
 
 export const sliderGroup2 = [
-  { "img": Img6, "url": "", "title": "Burek Burgers" },
-  { "img": Img7, "url": "", "title": "Civil Pours" },
-  { "img": Img8, "url": "", "title": "Forever Living Noemi" },
-  { "img": Img9, "url": "", "title": "Greenpoint Brooklyn" },
-  { "img": Img10, "url": "", "title": "Kunzi Shop" }
+  { "img": Img6, "url": "", "title": "Lifestyle Clothing" },
+  { "img": Img7, "url": "", "title": "MarketWise" },
+  { "img": Img8, "url": "", "title": "Parasols & Outdoor Furniture" },
+  { "img": Img9, "url": "", "title": "Safety Advisors Consultora" },
+  { "img": Img10, "url": "", "title": "Targeted Visitors" }
 ];

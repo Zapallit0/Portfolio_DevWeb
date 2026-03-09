@@ -21,7 +21,7 @@ function SliderComponent({images,reverse=false}) {
                   <LazyLoadImage 
                   effect="blur"
                   src={page.img}
-                  alt=""
+                  alt={page.title}
                   placeholderSrc={PlaceholderSource}
                   wrapperProps={
                   {style:{transitionDelay:'0.2s'}}

@@ -4,11 +4,18 @@ import TechStackSection from '../AboutUs/Sections/TechStack.jsx'
 import PortfolioSection from '../AboutUs/Sections/Portafolio.jsx'
 import SoftSkillsSection from '../AboutUs/Sections/SoftSkills.jsx'
 import Contact from './Contact/Contact'
+import SEO from '../../Components/SEO'
 import '../AboutUs/AboutUs.css'
 
 function HomePage() {
   return (
     <section className='AboutUsPage'>
+      <SEO
+        title="Digital Rescue Developers — Desarrollo Web a Medida"
+        description="Diseñamos y construimos sitios web a medida, ágiles, únicos y escalables. Descubre nuestro portfolio y stack tecnológico."
+        path="/"
+        includeStructuredData
+      />
       <HeroSection />
       <TechStackSection />
       <PortfolioSection />
