@@ -20,6 +20,7 @@
 }
 .contactForm h3{
     font-size: 1.5rem;
+    text-align: center;
 }
 .contactForm form{
     display: flex;
@@ -63,11 +64,14 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    max-width: 600px;
 }
 .contactLink h4{
-    align-self: flex-start;
-    margin-left: 10%;
+    width: 80%;
     font-size: 1.5rem;
+}
+.contactLink p{
+    width: 80%;
 }
 .contactLink a{
     color: #FFFFFF;
