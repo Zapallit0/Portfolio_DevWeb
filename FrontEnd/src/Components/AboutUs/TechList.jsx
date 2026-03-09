@@ -6,7 +6,7 @@ const TechList = memo(function TechList({ technologies }) {
       <ul>
         {technologies.map(tech => (
           <li key={tech.name}>
-            <img src={tech.icon} alt={`${tech.name} icon`} width={'50px'}/>
+            <img src={tech.icon} alt={`${tech.name} icon`} width="50" height="50" />
             {tech.name}
           </li>
         ))}

@@ -18,10 +18,12 @@ const SliderComponent = memo(function SliderComponent({images,reverse=false}) {
                 style={{ '--position': index+1 }}
                 key={index}
                 >
-                  <LazyLoadImage 
+                  <LazyLoadImage
                   effect="blur"
                   src={page.img}
                   alt={page.title}
+                  width={280}
+                  height={140}
                   placeholderSrc={PlaceholderSource}
                   wrapperProps={
                   {style:{transitionDelay:'0.2s'}}

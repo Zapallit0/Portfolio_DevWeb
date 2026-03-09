@@ -22,7 +22,9 @@ function TechStack() {
       <div className='TechList'>
         <motion.img
           src={Circle}
-          alt="Tech decoration"
+          alt=""
+          width={40}
+          height={40}
           className='techCircle techCircle--sm'
           variants={circleVariants}
           initial="hidden"
@@ -32,7 +34,9 @@ function TechStack() {
 
         <motion.img
           src={Circle}
-          alt="Tech decoration"
+          alt=""
+          width={60}
+          height={60}
           className='techCircle techCircle--md'
           variants={circleVariants}
           initial="hidden"
@@ -42,7 +46,9 @@ function TechStack() {
 
         <motion.img
           src={Circle}
-          alt="Tech decoration"
+          alt=""
+          width={100}
+          height={100}
           className='techCircle techCircle--lg'
           variants={circleVariants}
           initial="hidden"
@@ -60,7 +66,9 @@ function TechStack() {
 
         <motion.img
           src={Circle}
-          alt="Tech decoration"
+          alt=""
+          width={100}
+          height={100}
           className='techCircle techCircle--lg'
           variants={circleVariants}
           initial="hidden"
@@ -70,7 +78,9 @@ function TechStack() {
 
         <motion.img
           src={Circle}
-          alt="Tech decoration"
+          alt=""
+          width={60}
+          height={60}
           className='techCircle techCircle--md'
           variants={circleVariants}
           initial="hidden"
@@ -80,7 +90,9 @@ function TechStack() {
 
         <motion.img
           src={Circle}
-          alt="Tech decoration"
+          alt=""
+          width={40}
+          height={40}
           className='techCircle techCircle--sm'
           variants={circleVariants}
           initial="hidden"

@@ -16,7 +16,7 @@ function NavBar() {
   return (
     <nav className='navBar'>
       <Link to={ROUTES.HOME}>
-        <img src={Logo} alt="JVQ" height="40px"/>
+        <img src={Logo} alt="JVQ" width="40" height="40" />
       </Link>
 
       <div className='phone'>
@@ -35,7 +35,7 @@ function NavBar() {
 
       <div className='comp'>
         <ul className='navComp'>
-          <img src={Circle} alt="background" />
+          <img src={Circle} alt="" width="200" height="200" />
           <li><Link to={ROUTES.HOME}>Home</Link></li>
           <li><Link to={ROUTES.SERVICES}>Servicios</Link></li>
         </ul>

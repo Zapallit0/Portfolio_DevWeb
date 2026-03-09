@@ -10,7 +10,7 @@ const ProjectCard = memo(function ProjectCard({ project, techLogos, onSelect }) 
       onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.03)'}
       onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
     >
-      <img src={project.image} alt={project.name} />
+      <img src={project.image} alt={project.name} width={400} height={180} />
       <div className='ProyectData'>
         <div className='Details'>
           <span>&gt; {project.name}</span>

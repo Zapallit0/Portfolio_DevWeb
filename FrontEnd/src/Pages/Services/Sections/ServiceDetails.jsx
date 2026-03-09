@@ -36,6 +36,8 @@ function ServiceDetails() {
             <motion.img
               src={servicio.Image}
               alt={servicio.Title}
+              width={600}
+              height={250}
               whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.3 }}
             />

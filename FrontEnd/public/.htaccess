@@ -1,0 +1,39 @@
+# --- Force HTTPS and www in a single redirect ---
+RewriteEngine On
+
+# Redirect HTTP to HTTPS + www in one step (avoids double redirect)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.jhersvin.com/$1 [L,R=301]
+
+# --- Cache Control ---
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Hashed assets (JS, CSS) — 1 year
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+
+  # Images — 1 month
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+
+  # Fonts — 1 year
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+
+  # HTML — always revalidate
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# --- Compression ---
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# --- SPA fallback: serve index.html for all routes ---
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [L]

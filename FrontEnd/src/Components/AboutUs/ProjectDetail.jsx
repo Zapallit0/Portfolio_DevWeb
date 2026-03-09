@@ -54,7 +54,7 @@ function ProjectDetail({ project, techLogos, onClose }) {
         >
           <motion.div className="ProjectDetail-gallery" variants={detailItemVariants}>
             <div className="ProjectDetail-mainImage">
-              <img src={gallery[activeImage]} alt={project.name} />
+              <img src={gallery[activeImage]} alt={project.name} width={600} height={300} />
             </div>
             {gallery.length > 1 && (
               <div className="ProjectDetail-thumbnails">
@@ -64,7 +64,7 @@ function ProjectDetail({ project, techLogos, onClose }) {
                     className={`ProjectDetail-thumb ${i === activeImage ? 'active' : ''}`}
                     onClick={() => setActiveImage(i)}
                   >
-                    <img src={img} alt={`${project.name} ${i + 1}`} />
+                    <img src={img} alt={`${project.name} ${i + 1}`} width={60} height={45} />
                   </button>
                 ))}
               </div>
@@ -85,7 +85,7 @@ function ProjectDetail({ project, techLogos, onClose }) {
               <ul>
                 {project.techStack.map((tech) => (
                   <li key={tech}>
-                    <img src={techLogos[tech]} alt={`${tech} icon`} />
+                    <img src={techLogos[tech]} alt={`${tech} icon`} width={25} height={25} />
                     <p>{tech}</p>
                   </li>
                 ))}
