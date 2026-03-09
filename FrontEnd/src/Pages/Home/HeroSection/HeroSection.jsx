@@ -28,7 +28,7 @@ function HeroSection() {
               duration: 2,
               ease: "easeInOut",
               times: [0, 0.2, 0.5, 0.8, 1],
-              repeat: Infinity,
+              repeat: 5,
               repeatDelay: 1
             }}
             >negocio</motion.span> en una realidad <motion.span
@@ -39,7 +39,7 @@ function HeroSection() {
               duration: 2,
               ease: "easeInOut",
               times: [0, 0.2, 0.5, 0.8, 1],
-              repeat: Infinity,
+              repeat: 5,
               repeatDelay: 1
             }}
             >virtual</motion.span></motion.h1>

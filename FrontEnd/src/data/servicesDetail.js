@@ -1,6 +1,6 @@
-import WebSimple from '../assets/ServicesImgs/WebBasica.png'
-import WebAmplia from '../assets/ServicesImgs/WebAmplia.png'
-import WebService from '../assets/ServicesImgs/WebService.jpg'
+import WebSimple from '../assets/ServicesImgs/WebBasica.webp'
+import WebAmplia from '../assets/ServicesImgs/WebAmplia.webp'
+import WebService from '../assets/ServicesImgs/WebService.webp'
 
 export const ServiciosDetalle = [
   {

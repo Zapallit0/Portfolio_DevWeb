@@ -1,6 +1,7 @@
+import { memo } from 'react';
 import { ExternalLink } from 'lucide-react';
 
-function ProjectCard({ project, techLogos, onSelect }) {
+const ProjectCard = memo(function ProjectCard({ project, techLogos, onSelect }) {
   return (
     <div
       className='ProyectCard'
@@ -44,6 +45,6 @@ function ProjectCard({ project, techLogos, onSelect }) {
       </a>
     </div>
   );
-}
+});
 
 export default ProjectCard;

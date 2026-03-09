@@ -25,7 +25,7 @@ function Aboutus() {
         <motion.button
         initial={{ scale: 1}}
         animate={{ scale: [1, 1.1, 1] }}
-        transition={{ duration: 3.0, repeat: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 3.0, repeat: 3, ease: "easeInOut" }}
         onClick={handleNavigateToNosotros}
         style={{ cursor: 'pointer' }}
         >

@@ -1,5 +1,6 @@
+import { memo } from 'react';
 
-function TechList({ technologies }) {
+const TechList = memo(function TechList({ technologies }) {
   return (
     <div className='Languages'>
       <ul>
@@ -12,6 +13,6 @@ function TechList({ technologies }) {
       </ul>
     </div>
   );
-}
+});
 
 export default TechList;

@@ -1,4 +1,3 @@
-import React from 'react'
 import HeroSection from '../AboutUs/Sections/HeroSection.jsx'
 import TechStackSection from '../AboutUs/Sections/TechStack.jsx'
 import PortfolioSection from '../AboutUs/Sections/Portafolio.jsx'

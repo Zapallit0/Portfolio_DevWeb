@@ -1,10 +1,10 @@
-import React from 'react'
+import { memo } from 'react'
 import './SliderComponent.css'
 // Lazy Loading
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import PlaceholderSource from '../../assets/ImgLoader/websiteLoader.webp'
-function SliderComponent({images,reverse=false}) {
+const SliderComponent = memo(function SliderComponent({images,reverse=false}) {
   return (
     <div>
         <div 
@@ -33,6 +33,6 @@ function SliderComponent({images,reverse=false}) {
         </div>
     </div>
   )
-}
+})
 
 export default SliderComponent

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import './NavBar.css'
 import { Squash as Hamburger } from 'hamburger-react'
@@ -9,9 +9,9 @@ import { ROUTES } from '../../../constants/routes'
 function NavBar() {
   const [showMenu, setShowMenu] = useState(false)
 
-  const handleMenuClick = () => {
+  const handleMenuClick = useCallback(() => {
     setShowMenu(false)
-  }
+  }, [])
 
   return (
     <nav className='navBar'>

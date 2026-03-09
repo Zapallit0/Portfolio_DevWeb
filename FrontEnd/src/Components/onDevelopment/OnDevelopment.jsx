@@ -1,4 +1,3 @@
-import React from 'react';
 import './OnDevelopment.css';
 
 const OnDevelopment = () => {
