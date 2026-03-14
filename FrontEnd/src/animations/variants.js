@@ -90,11 +90,11 @@ export const pageVariants = {
   initial: { opacity: 0 },
   animate: {
     opacity: 1,
-    transition: { duration: 0.6, delay: 0.8, ease: "easeOut" }
+    transition: { duration: 0.5, delay: 0.9, ease: "easeOut" }
   },
   exit: {
     opacity: 0,
-    transition: { duration: 0.4, ease: "easeIn" }
+    transition: { duration: 0.2, ease: "easeIn" }
   }
 };
 

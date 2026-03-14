@@ -35,7 +35,7 @@ function NavBar() {
 
       <div className='comp'>
         <ul className='navComp'>
-          <img src={Circle} alt="" width="200" height="200" />
+          <img src={Circle} alt="" />
           <li><Link to={ROUTES.HOME}>Home</Link></li>
           <li><Link to={ROUTES.SERVICES}>Servicios</Link></li>
         </ul>

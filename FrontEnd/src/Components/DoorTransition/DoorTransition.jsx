@@ -1,15 +1,10 @@
 import PropTypes from 'prop-types'
-import { useLocation } from 'react-router-dom'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { doorVariants, doorVariantsRight, pageVariants } from '../../animations/variants'
 
 function DoorTransition({ children }) {
-  const location = useLocation();
-
   return (
-    <AnimatePresence mode="wait">
       <motion.div
-        key={location.pathname}
         initial="initial"
         animate="animate"
         exit="exit"
@@ -96,11 +91,10 @@ function DoorTransition({ children }) {
         </motion.div>
 
         {/* Page Content */}
-        <motion.div variants={pageVariants}>
+        <motion.div variants={pageVariants} style={{ opacity: 0 }}>
           {children}
         </motion.div>
       </motion.div>
-    </AnimatePresence>
   )
 }
 

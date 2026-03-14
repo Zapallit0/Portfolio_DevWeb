@@ -18,7 +18,7 @@ import Lexor from '../assets/Proyects/LexorSmartContract.webp'
 import BlackBird from '../assets/Proyects/BlackBird_Landing.webp'
 import BlackBird2 from '../assets/Proyects/BlackBird_Landing_2.webp'
 import BlackBird3 from '../assets/Proyects/BlackBird_Landing_3.webp'
-
+ 
 import Osprey from '../assets/Proyects/Osprey.webp'
 
 import JavaScript from '../assets/Technologies/javascript.svg'
