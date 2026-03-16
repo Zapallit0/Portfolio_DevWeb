@@ -9,15 +9,26 @@ const structuredData = {
   '@graph': [
     {
       '@type': 'Person',
-      name: 'Jhersvin',
+      name: 'Jhersvin Villodas Quinto',
       url: BASE_URL,
       jobTitle: 'Desarrollador Web Fullstack',
-      knowsAbout: ['React', 'Node.js', 'JavaScript', 'Desarrollo Web'],
+      description: 'Desarrollador web fullstack especializado en React y Node.js. Diseño y desarrollo de páginas web a medida.',
+      knowsAbout: [
+        'Desarrollo Web', 'Diseño Web', 'React', 'Node.js', 'JavaScript',
+        'Páginas Web', 'Aplicaciones Web', 'Fullstack', 'Frontend', 'Backend',
+      ],
+      sameAs: [],
+      offers: {
+        '@type': 'Offer',
+        name: 'Desarrollo de Páginas Web',
+        description: 'Diseño y desarrollo de páginas web profesionales, sitios web a medida y aplicaciones web con React y Node.js',
+      },
     },
     {
       '@type': 'WebSite',
       name: SITE_NAME,
       url: BASE_URL,
+      description: 'Portafolio de Jhersvin — Desarrollador web fullstack. Desarrollo de páginas web, diseño web y soluciones digitales.',
     },
   ],
 }

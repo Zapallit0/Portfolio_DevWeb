@@ -8,17 +8,17 @@ function Contact() {
     <section className='contactPage'>
         <div className='contactForm'>
         <h3>
-            ¿Te gustó lo que ofrecemos?
+            ¿Necesitas una página web?
             <br />
             <br />
-            Escríbenos:
+            Escríbeme:
         </h3>
         <ContactForm/>
         </div>
         <div className='contactLink'>
             <ul>
                 <h4>Contacto: </h4>
-                <p>Estamos disponibles para tus consultas, sugerencias usando los siguientes canales de comunicación:</p>
+                <p>Estoy disponible para tus consultas y proyectos de desarrollo web:</p>
                 {contactLinks.map((link) => (
                   <li key={link.type}>
                     <div>

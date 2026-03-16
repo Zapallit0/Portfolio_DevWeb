@@ -9,7 +9,7 @@ function Portfolio() {
 
   return (
     <div className='Portafolio'>
-      <h3>-- Trabajos y proyectos completados</h3>
+      <h3>-- Proyectos de desarrollo web completados</h3>
       <div className='Projects'>
         {projects.map(project => (
           <ProjectCard

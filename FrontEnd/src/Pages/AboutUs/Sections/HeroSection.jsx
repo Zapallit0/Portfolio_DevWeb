@@ -6,7 +6,7 @@ function HeroSection() {
   return (
     <div className='HeroAboutUs'>
       <div className='Profile' >
-        <img src={PHOTO} alt="Profile" className='Image' width={'500'} height={'500'}/>
+        <img src={PHOTO} alt="Jhersvin Villodas Quinto — Desarrollador Web Fullstack" className='Image' width={'500'} height={'500'}/>
       </div>
       <div className='Content'>
         <h1>

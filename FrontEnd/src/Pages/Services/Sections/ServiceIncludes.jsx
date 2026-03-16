@@ -40,7 +40,7 @@ function ServiceIncludes() {
         viewport={{ once: true, amount: 0.4 }}
       >
         <motion.h3 variants={itemVariants}>
-          TODOS NUESTROS SERVICIOS INCLUYEN
+          TODOS MIS SERVICIOS INCLUYEN
         </motion.h3>
 
         <ul>
@@ -59,7 +59,7 @@ function ServiceIncludes() {
           onClick={() => navigate(ROUTES.CONTACT)}
           style={{ cursor: 'pointer' }}
         >
-          CONTÁCTANOS
+          CONTÁCTAME
         </motion.button>
       </motion.div>
     </section>

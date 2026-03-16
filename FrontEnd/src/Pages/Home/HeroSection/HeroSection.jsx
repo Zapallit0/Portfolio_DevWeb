@@ -16,11 +16,11 @@ function HeroSection() {
             <motion.h3
               initial={{ opacity: 0,x:-500}}
               animate={{ opacity: 1,x:0,transition: { duration: 0.5, ease: "easeIn"}}}
-            >Inicia tu viaje</motion.h3>
+            >Desarrollo Web Fullstack</motion.h3>
             <motion.h1
             initial={{ opacity: 0,x:-500}}
             animate={{ opacity: 1,x:0,transition: { duration: 1, ease: "easeIn",}}}
-            >Convierte tu <motion.span
+            >Creo tu página web <motion.span
             animate={{
               color:['#6795ff','#6795ff','#FFFFFF','#FFFFFF','#6795ff'],
             }}
@@ -31,7 +31,7 @@ function HeroSection() {
               repeat: 5,
               repeatDelay: 1
             }}
-            >negocio</motion.span> en una realidad <motion.span
+            >profesional</motion.span> y a <motion.span
             animate={{
               color:['#6795ff','#6795ff','#FFFFFF','#FFFFFF','#6795ff'],
             }}
@@ -42,7 +42,7 @@ function HeroSection() {
               repeat: 5,
               repeatDelay: 1
             }}
-            >virtual</motion.span></motion.h1>
+            >medida</motion.span></motion.h1>
             <ul className='heroSocials'>
             {heroSocialLinks.map((link, index) => (
             <motion.li
@@ -67,8 +67,8 @@ function HeroSection() {
         initial={{ opacity: 0}}
         animate={{ opacity: 1,transition: { duration: 1, ease: "easeIn"}}}
         >
-            <span>Diseñamos y construimos tu sitio web a medida</span>
-            <p>Creamos webs ágiles, únicas, escalables y llamativas siguiendo las mejores prácticas.</p>
+            <span>Diseño y desarrollo de páginas web a medida</span>
+            <p>Páginas web ágiles, únicas, escalables y llamativas siguiendo las mejores prácticas.</p>
         </motion.div>
         <TresPuntos />
     </section>
