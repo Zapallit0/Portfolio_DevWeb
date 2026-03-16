@@ -10,8 +10,8 @@ function HomePage() {
   return (
     <section className='AboutUsPage'>
       <SEO
-        title="Digital Rescue Developers — Desarrollo Web a Medida"
-        description="Diseñamos y construimos sitios web a medida, ágiles, únicos y escalables. Descubre nuestro portfolio y stack tecnológico."
+        title="Jhersvin — Desarrollo Web Fullstack | React & Node.js"
+        description="Portafolio de Jhersvin, desarrollador fullstack. Proyectos, stack tecnológico y servicios de desarrollo web a medida."
         path="/"
         includeStructuredData
       />

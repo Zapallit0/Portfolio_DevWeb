@@ -8,8 +8,8 @@ function ContactPage() {
   return (
     <section className='ContactPage'>
       <SEO
-        title="Contacto | Digital Rescue Developers"
-        description="¿Listo para convertir tu idea en realidad? Contáctanos para consultas, cotizaciones o soporte."
+        title="Contacto | Jhersvin — Desarrollo Web Fullstack"
+        description="¿Tienes un proyecto en mente? Contáctame para consultas, cotizaciones o colaboraciones en desarrollo web."
         path="/contacto"
       />
       <HeroContact />

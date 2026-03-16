@@ -8,8 +8,8 @@ function ServicesPage() {
   return (
     <section className='ServicesPage'>
       <SEO
-        title="Servicios de Desarrollo Web | Digital Rescue Developers"
-        description="Desarrollo, diseño y sistemas web profesionales. Soluciones a medida que transforman tu negocio."
+        title="Servicios | Jhersvin — Desarrollo Web Fullstack"
+        description="Servicios de desarrollo web fullstack: diseño, desarrollo y soluciones a medida con React & Node.js."
         path="/servicios"
       />
       <HeroServices />

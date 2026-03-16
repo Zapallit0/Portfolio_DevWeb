@@ -1,17 +1,18 @@
 import { Helmet } from 'react-helmet-async'
 
 const BASE_URL = 'https://www.jhersvin.com'
-const SITE_NAME = 'Digital Rescue Developers'
+const SITE_NAME = 'Jhersvin — Desarrollo Web Fullstack'
 const DEFAULT_IMAGE = `${BASE_URL}/og-image.png`
 
 const structuredData = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': 'Organization',
-      name: SITE_NAME,
+      '@type': 'Person',
+      name: 'Jhersvin',
       url: BASE_URL,
-      logo: `${BASE_URL}/favicon.svg`,
+      jobTitle: 'Desarrollador Web Fullstack',
+      knowsAbout: ['React', 'Node.js', 'JavaScript', 'Desarrollo Web'],
     },
     {
       '@type': 'WebSite',
