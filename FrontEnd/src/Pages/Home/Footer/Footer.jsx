@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className="footer">
       <a href="https://www.jhersvin.com" className="footer__logo">
-        <img src={Logo} alt="Logo Jhersvin" height="80" width="80" />
+        <img src={Logo} alt="Jhersvin — Desarrollador Web Fullstack" height="80" width="80" />
       </a>
 
       <ul className="footer__nav">

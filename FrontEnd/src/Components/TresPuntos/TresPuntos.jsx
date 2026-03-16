@@ -12,7 +12,7 @@ function TresPuntos() {
           viewport={{ once: true, amount: 0.8 }}
         >
           <div className='herologos'>
-            <img src={point.icon} alt="icon" width='40px' height='40px' loading='lazy'/>
+            <img src={point.icon} alt={point.title} width='40px' height='40px' loading='lazy'/>
           </div>
           <div>
             <h4>{point.title}</h4>

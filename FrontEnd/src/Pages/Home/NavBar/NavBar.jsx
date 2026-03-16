@@ -16,7 +16,7 @@ function NavBar() {
   return (
     <nav className='navBar'>
       <Link to={ROUTES.HOME}>
-        <img src={Logo} alt="JVQ" width="40" height="40" />
+        <img src={Logo} alt="Jhersvin — Desarrollador Web" width="40" height="40" />
       </Link>
 
       <div className='phone'>
